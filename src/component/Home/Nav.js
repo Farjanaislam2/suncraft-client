@@ -7,7 +7,7 @@ const Nav = () => {
         </li>
 
 
-        <li tabIndex={0}>
+        {/* <li tabIndex={0}>
             <a className="justify-between">
                 Buisness
                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
@@ -48,10 +48,10 @@ const Nav = () => {
 
 
             </ul>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
             <a>Buisness</a>
-        </li>
+        </li> */}
         <li>
             <a>Buy Project From Us</a>
         </li>
@@ -71,7 +71,31 @@ const Nav = () => {
                         <li>
                             <a>Home</a>
                         </li>
-                        <li tabIndex={0}>
+                        <li>
+                        <a className='text-lg'>About Us</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Consulting</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Projects</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Products</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Productive Load Applications</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Investment Opportunitoes</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Contact Us</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Work With Us</a>
+                    </li>
+                        {/* <li tabIndex={0}>
                         <a>
                             Buisness
                             <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
@@ -102,20 +126,43 @@ const Nav = () => {
                                 <a>Renewable Energy Products</a>
                             </li>
                         </ul>
-                    </li>
-                        <li >
-                            <p className=''>Buy Project & Product From Us</p> 
-                        </li>
+                    </li> */}
+                       
                     </ul>
                 </div>
                 <img className='w-[180px] ' src='https://suncraftenergy.net/images/logo.png' alt='#'/>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 py-1">
                     <li>
                         <a className='text-lg'>Home</a>
                     </li>
-                    <li tabIndex={0}>
+                    <li>
+                        <a className='text-lg'>About Us</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Consulting</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Projects</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Products</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Productive Load Applications</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Investment Opportunities</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Contact Us</a>
+                    </li>
+                    <li>
+                        <a className='text-lg'>Work With Us</a>
+                    </li>
+                  
+                    {/* <li tabIndex={0}>
                         <a className='text-lg'>
                             Buisness
                             <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
@@ -146,19 +193,15 @@ const Nav = () => {
                                 <a>Renewable Energy Products</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a className='text-lg'>Buy Project & Product From Us</a>
-                    </li>
+                    </li> */}
+                    
                 </ul>
             </div>
             
             <div className="navbar-end">
                 <button className='bg-slate-300 px-5 font-medium rounded-md  py-3'>Login</button>
             </div>
-            <div className="ml-5">
-                <button className='bg-slate-300 px-5  font-medium rounded-md py-3'>Signup</button>
-            </div>
+          
             
         </div>
     );
