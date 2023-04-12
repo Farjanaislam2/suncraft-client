@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     const menuItems = <>
@@ -69,7 +70,7 @@ const Nav = () => {
                     <ul tabIndex={0}
                         className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li>
-                            <a>Home</a>
+                            <a className='text-lg'>Home</a>
                         </li>
                         <li>
                         <a className='text-lg'>About Us</a>
@@ -141,7 +142,7 @@ const Nav = () => {
                         <a className='text-lg'>About Us</a>
                     </li>
                     <li>
-                        <a className='text-lg'>Consulting</a>
+                       <Link className='text-lg' to='/login'>Consulting</Link> 
                     </li>
                     <li>
                         <a className='text-lg'>Projects</a>
