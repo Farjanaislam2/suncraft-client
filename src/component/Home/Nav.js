@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import img from "../images/suncarft"
+import img from "../images/suncraft.png";
 
 const Nav = () => {
     const menuItems = <>
