@@ -4,6 +4,7 @@ import Main from "../Layout/Main";
 import Login from "../component/Pages/Login/Login";
 import Signup from "../component/Pages/Signup/Signup";
 
+
 export const router =createBrowserRouter([
     {
     path:'/',
@@ -21,6 +22,7 @@ export const router =createBrowserRouter([
             path:'/signup',
             element:<Signup></Signup>
         },
+       
     ]
     }
 ])
