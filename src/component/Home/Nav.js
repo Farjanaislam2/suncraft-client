@@ -6,7 +6,7 @@ import { AuthContext } from '../../context/AuthProvider';
 const Nav = () => {
     const {user,logOut} =useContext(AuthContext);
 
-    const handleLgout=()=>{
+    const handleLogout=()=>{
         logOut()
         .then(()=>{})
         .catch(err => console.log(err));
@@ -163,10 +163,10 @@ const Nav = () => {
                         <a className='text-lg'>Products</a>
                     </li>
                     <li>
-                        <a className='text-lg'>Productive Load Applications</a>
+                        <a className='text-lg w-[180px]'>Productive Load Applications</a>
                     </li>
                     <li>
-                        <a className='text-lg'>Investment Opportunities</a>
+                        <a className='text-lg w-[120px]'>Investment Opportunities</a>
                     </li>
                     <li>
                         <a className='text-lg'>Contact Us</a>
@@ -214,9 +214,14 @@ const Nav = () => {
             <div className="navbar-end">
                {
                 user?.uid?
-                 <button onClick={handleLgout} className='bg-slate-300 px-3 font-medium rounded-md  py-3'>
+                <>
+                
+                <ul><Link className='px-2 taxt-lg' to ="/dashboard">Dashboard</Link>
+                </ul>
+                 <button onClick={handleLogout} className='bg-slate-300 px-3 font-medium rounded-md  py-3'>
                  Sign Out
                 </button>
+                </>
                 :
                 <button className='bg-slate-300 px-5 font-medium rounded-md  py-3'>
                 <Link to="/login"> Login</Link>
