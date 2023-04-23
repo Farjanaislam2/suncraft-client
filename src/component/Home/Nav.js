@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import img from "../images/suncraft.png";
 
 const Nav = () => {
@@ -81,6 +81,7 @@ const Nav = () => {
                     </li>
                     <li>
                         <a className='text-lg'>Projects</a>
+             
                     </li>
                     <li>
                         <a className='text-lg'>Products</a>
@@ -147,7 +148,7 @@ const Nav = () => {
                        <Link className='text-lg' to='/login'>Consulting</Link> 
                     </li>
                     <li>
-                        <a className='text-lg'>Projects</a>
+                        <Link to="../Project" className='text-lg'>Projects</Link>
                     </li>
                     <li>
                         <a className='text-lg'>Products</a>
