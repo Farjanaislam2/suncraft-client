@@ -64,7 +64,7 @@ const handleLogin =data =>{
           
           <input className="btn w-full mt-5" type="submit" value="Login"/>
           <div>
-{loginError && <p>{loginError}</p>}
+{loginError && <p className="text-red-500">{loginError}</p>}
           </div>
         </form>
         <h2 className="mt-2">New at sustiknow?

@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import img from "../images/suncraft.png";
+import { AuthContext } from '../../context/AuthProvider';
 
 const Nav = () => {
+    const {user,logOut} =useContext(AuthContext);
+
+    const handleLgout=()=>{
+        logOut()
+        .then(()=>{})
+        .catch(err => console.log(err));
+    }
+
     const menuItems = <>
         <li>
             <a>Home</a>
@@ -61,11 +70,12 @@ const Nav = () => {
 
     </>
     return (
-        <div className="navbar bg-gray-100 px-8">
+        <div
+         className="navbar bg-gray-100 px-8">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0}
-                        className="btn btn-ghost lg:hidden">
+                        className="btn btn-ghost ">
                         <image src={img} alt="#"/>
                     </label>
                     <ul tabIndex={0}
@@ -202,9 +212,16 @@ const Nav = () => {
             </div>
             
             <div className="navbar-end">
+               {
+                user?.uid?
+                 <button onClick={handleLgout} className='bg-slate-300 px-3 font-medium rounded-md  py-3'>
+                 Sign Out
+                </button>
+                :
                 <button className='bg-slate-300 px-5 font-medium rounded-md  py-3'>
-                    <Link to="/login"> Login</Link>
-                   </button>
+                <Link to="/login"> Login</Link>
+               </button>
+               }
             </div>
           
             
