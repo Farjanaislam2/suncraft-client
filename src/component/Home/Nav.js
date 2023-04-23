@@ -70,11 +70,12 @@ const Nav = () => {
 
     </>
     return (
-        <div className="navbar bg-gray-100 px-8">
+        <div
+         className="navbar bg-gray-100 px-8">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0}
-                        className="btn btn-ghost lg:hidden">
+                        className="btn btn-ghost ">
                         <image src={img} alt="#"/>
                     </label>
                     <ul tabIndex={0}
