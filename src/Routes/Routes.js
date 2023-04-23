@@ -5,6 +5,8 @@ import Login from "../component/Pages/Login/Login";
 import Signup from "../component/Pages/Signup/Signup";
 import Projects from "../component/Project/Projects";
 
+
+
 export const router =createBrowserRouter([
     {
     path:'/',
@@ -26,6 +28,7 @@ export const router =createBrowserRouter([
             path:'/project',
             element:<Projects></Projects>
         },
+      
     ]
     }
 ])

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import projectData from "../Project/Projects.json";
 
 export default function Projects() {
+    const [projects,setProjects]=useState([])
+    useEffect(()=>{
+     setProjects(projectData.projects)
+    },[])
+    console.log(projects)
     return (
-        <div className="flex flex-col justify-center">
-            <div className="overflow-x-auto">
+        <div className="flex  justify-center ">
+            <div className="overflow-x-auto ">
                 <div className="p-1.5 w-full inline-block align-middle">
                     <div className="overflow-hidden border rounded-lg">
                         <table className="min-w-80 divide-y divide-gray-200">
@@ -54,99 +60,31 @@ export default function Projects() {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-200">
-                                <tr>
+                                    {
+                                        projects.map((project,index)=><tr key={index}> <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                        {project.projectcode}
+                                    </td>
                                     <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        1001
+                                        {project.projectlocation}
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                        
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                        
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                        
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                        
-                                    </td>
-
-                                </tr>
-                                <tr>
                                     <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        1002
+                                        {project.projectcapacity}
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                        
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                        
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                        
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                        
-                                    </td>
-                        
-                                </tr>
-                                <tr>
                                     <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        1003
+                                        {project.ppaduration}
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                 
-                                  
-                                </tr>
-                                <tr>
                                     <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        1004
+                                        {project.projectstatus}
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                 
-                                  
-                                </tr>
-                                <tr>
                                     <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        1005
+                                        {project.pparate}
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
+                                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                        {project.buyproject}
                                     </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                    
-                                    </td>
-                                 
-                                  
-                                </tr>
+                                    </tr>)
+                                    }
+                                
                             </tbody>
                         </table>
                     </div>
