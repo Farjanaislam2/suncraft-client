@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Projects() {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center">
             <div className="overflow-x-auto">
                 <div className="p-1.5 w-full inline-block align-middle">
                     <div className="overflow-hidden border rounded-lg">
-                        <table className="min-w-full divide-y divide-gray-200">
+                        <table className="min-w-80 divide-y divide-gray-200">
                             <thead className="bg-gray-50">
                                 <tr>
                                     <th
@@ -49,7 +49,7 @@ export default function Projects() {
                                         scope="col"
                                         className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase "
                                     >
-                                        Buy Project/Sold Out
+                                        Buy Project/Sold Out.
                                     </th>
                                 </tr>
                             </thead>
