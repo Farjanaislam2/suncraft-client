@@ -6,16 +6,16 @@ import solar2 from '../images/solar2.png';
 import solar3 from '../images/solar3.jpg';
 import solar4 from '../images/solar4.jpg';
 
-
-
 const Home = () => {
 
   return (
-    <div className='container mx-auto'>
+    // Banner
+    <div className='container mx-auto relative'>
       <div style={{position:'relative'}}>
       <button style={{position:'absolute',top:'46%',left:'44%'}} className="btn btn-primary rounded-3xl">Start your Journey</button>
   <div className='flex px-1 py-1' > 
     <img className='object-cover h-80 w-full' src={solar1}/> 
+    
     <img className='object-cover h-80 w-full' src={solar2}/> 
   </div>
   <div className='flex px-1 py-1'> 

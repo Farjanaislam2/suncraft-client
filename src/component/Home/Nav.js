@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link} from 'react-router-dom';
 import img from "../images/suncraft.png";
 import { AuthContext } from '../../context/AuthProvider';
+import { useContext } from 'react';
 
 const Nav = () => {
     const {user,logOut} =useContext(AuthContext);
@@ -91,6 +92,7 @@ const Nav = () => {
                     </li>
                     <li>
                         <a className='text-lg'>Projects</a>
+             
                     </li>
                     <li>
                         <a className='text-lg'>Products</a>
@@ -157,7 +159,7 @@ const Nav = () => {
                        <Link className='text-lg' to='/login'>Consulting</Link> 
                     </li>
                     <li>
-                        <a className='text-lg'>Projects</a>
+                        <Link to="../Project" className='text-lg'>Projects</Link>
                     </li>
                     <li>
                         <a className='text-lg'>Products</a>
