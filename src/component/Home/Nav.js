@@ -142,7 +142,7 @@ const Nav = () => {
                        
                     </ul>
                 </div>
-                <image src={img} alt="#"/>
+                <image className='' src={img} alt="#"/>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 py-1">
@@ -216,7 +216,7 @@ const Nav = () => {
                 user?.uid?
                 <>
                 
-                <ul><Link className='px-2 taxt-lg' to ="/dashboard">Dashboard</Link>
+                <ul><Link className='mx-2 text-lg' to ="/dashboard">Dashboard</Link>
                 </ul>
                  <button onClick={handleLogout} className='bg-slate-300 px-3 font-medium rounded-md  py-3'>
                  Sign Out
