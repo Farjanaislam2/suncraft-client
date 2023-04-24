@@ -7,6 +7,8 @@ import Projects from "../component/Project/Projects";
 import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../component/Pages/Dashboard/Dashboard"
 
+
+
 export const router =createBrowserRouter([
     {
     path:'/',
@@ -28,6 +30,7 @@ export const router =createBrowserRouter([
             path:'/project',
             element:<Projects></Projects>
         },
+      
     ]
     },
     {

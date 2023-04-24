@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="text-black">
       <RouterProvider router={router}></RouterProvider>
-       <Toaster></Toaster>
+      <Toaster></Toaster>
     </div>
   );
 }

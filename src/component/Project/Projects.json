@@ -1,0 +1,147 @@
+{
+ "projects":[
+
+    {
+        "projectcode":"0001",
+        "projectlocation":"Kolkata",
+        "projectcapacity":"10000",
+        "ppaduration":"8",
+        "projectstatus":"On Going",
+        "pparate":"5%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0002",
+        "projectlocation":"Kasba",
+        "projectcapacity":"10010",
+        "ppaduration":"10",
+        "projectstatus":"On Going",
+        "pparate":"8%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0003",
+        "projectlocation":"Kallyani",
+        "projectcapacity":"10020",
+        "ppaduration":"12",
+        "projectstatus":"End",
+        "pparate":"2.5%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0004",
+        "projectlocation":"Dhaka",
+        "projectcapacity":"1000",
+        "ppaduration":"8",
+        "projectstatus":"On Going",
+        "pparate":"11%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0005",
+        "projectlocation":"Kolkata",
+        "projectcapacity":"10000",
+        "ppaduration":"8",
+        "projectstatus":"On Going",
+        "pparate":"7%",
+        "buyproject":"11"
+
+    },
+    {
+        "projectcode":"0006",
+        "projectlocation":"Kolkata",
+        "projectcapacity":"10000",
+        "ppaduration":"8",
+        "projectstatus":"On Going",
+        "pparate":"5%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0007",
+        "projectlocation":"Kolkata",
+        "projectcapacity":"10000",
+        "ppaduration":"8",
+        "projectstatus":"On Going",
+        "pparate":"5%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0008",
+        "projectlocation":"Kolkata",
+        "projectcapacity":"10000",
+        "ppaduration":"8",
+        "projectstatus":"On Going",
+        "pparate":"5%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0009",
+        "projectlocation":"Bagerhat",
+        "projectcapacity":"10000",
+        "ppaduration":"8",
+        "projectstatus":"On Going",
+        "pparate":"5%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0010",
+        "projectlocation":"Kolkata",
+        "projectcapacity":"10016",
+        "ppaduration":"8",
+        "projectstatus":"On Going",
+        "pparate":"5%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0011",
+        "projectlocation":"Kolkata",
+        "projectcapacity":"10000",
+        "ppaduration":"8",
+        "projectstatus":"On Going",
+        "pparate":"7%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0012",
+        "projectlocation":"Kolkata",
+        "projectcapacity":"10000",
+        "ppaduration":"8",
+        "projectstatus":"End",
+        "pparate":"5%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0013",
+        "projectlocation":"Barasat",
+        "projectcapacity":"10000",
+        "ppaduration":"10",
+        "projectstatus":"On Going",
+        "pparate":"5%",
+        "buyproject":"10"
+
+    },
+    {
+        "projectcode":"0014",
+        "projectlocation":"Kolkata",
+        "projectcapacity":"10012",
+        "ppaduration":"4",
+        "projectstatus":"On Going",
+        "pparate":"17%",
+        "buyproject":"10"
+
+    }
+ ]
+
+
+}
