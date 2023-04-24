@@ -61,25 +61,25 @@ export default function Projects() {
                             </thead>
                             <tbody className="divide-y divide-gray-200">
                                     {
-                                        projects.map((project,index)=><tr key={index}> <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                        projects.map((project,index)=><tr key={index}> <td className="px-10 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                                         {project.projectcode}
                                     </td>
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                    <td className="px-10 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                                         {project.projectlocation}
                                     </td>
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                    <td className="px-12 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                                         {project.projectcapacity}
                                     </td>
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                    <td className="px-12 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                                         {project.ppaduration}
                                     </td>
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                    <td className="px-9 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                                         {project.projectstatus}
                                     </td>
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                    <td className="px-10 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                                         {project.pparate}
                                     </td>
-                                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                    <td className="px-12 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                                         {project.buyproject}
                                     </td>
                                     </tr>)

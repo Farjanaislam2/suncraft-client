@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     // Banner
-    <div className='container mx-auto relative'>
+    <div className='container mx-[30px] my-5 relative'>
       <div style={{position:'relative'}}>
       <button style={{position:'absolute',top:'46%',left:'44%'}} className="btn btn-primary rounded-3xl">Start your Journey</button>
   <div className='flex px-1 py-1' > 
