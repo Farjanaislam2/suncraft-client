@@ -6,6 +6,7 @@ import Signup from "../component/Pages/Signup/Signup";
 import Projects from "../component/Project/Projects";
 import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../component/Pages/Dashboard/Dashboard"
+import Customer from "../component/Customer/Customer";
 
 
 
@@ -29,6 +30,10 @@ export const router =createBrowserRouter([
         {
             path:'/project',
             element:<Projects></Projects>
+        },
+        {
+            path:'/customer',
+            element:<Customer></Customer>
         },
       
     ]
