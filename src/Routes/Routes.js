@@ -5,7 +5,8 @@ import Login from "../component/Pages/Login/Login";
 import Signup from "../component/Pages/Signup/Signup";
 import Projects from "../component/Project/Projects";
 import PrivateRoute from "./PrivateRoute";
-import Dashboard from "../component/Pages/Dashboard/Dashboard"
+import DashboardLayout from "../Layout/DashboardLayout";
+import HomeImage from "../component/Pages/Dashboard/HomeImage";
 
 
 
@@ -35,7 +36,13 @@ export const router =createBrowserRouter([
     },
     {
         path:'/dashboard',
-        element:<PrivateRoute><Dashboard></Dashboard>
-        </PrivateRoute>
+        element:<PrivateRoute><DashboardLayout></DashboardLayout>
+        </PrivateRoute>,
+        children:[
+            {
+                path:'/dashboard',
+                element:<HomeImage></HomeImage>
+            }
+        ]
     }
 ])
