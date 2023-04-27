@@ -8,11 +8,11 @@ export default function Projects() {
     },[])
     console.log(projects)
     return (
-        <div className="flex  justify-center">
-            <div className="overflow-x-auto  ">
+        <div className="flex  justify-center ">
+            <div className="overflow-x-auto ">
                 <div className="p-1.5 w-full inline-block align-middle">
                     <div className="overflow-hidden border rounded-lg">
-                        <table className="min-w-80 divide-y divide-gray-200  bg-green-50	">
+                        <table className="min-w-80 divide-y divide-gray-200  bg-green-50 table table-zebra w-full	">
                             <thead className="bg-gray-50">
                                 <tr className="my-5">
                                     <th
@@ -61,7 +61,7 @@ export default function Projects() {
                             </thead>
                             <tbody className="divide-y divide-gray-200">
                                     {
-                                        projects.map((project,index)=><tr key={index}> <td className="px-12 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
+                                        projects.map((project,index)=><tr key={index}> <td className="px-12 py-4 text-sm font-medium text-gray-800 whitespace-nowrap ">
                                         {project.projectcode}
                                     </td>
                                     <td className="px-12 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
