@@ -5,6 +5,7 @@ import solar1 from '../images/solar1.jpg';
 import solar2 from '../images/solar2.png';
 import solar3 from '../images/solar3.jpg';
 import solar4 from '../images/solar4.jpg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -19,7 +20,7 @@ fetch('http://localhost:5000/getImage')
 console.log(img[0]?.image?.url)
   return (
     // Banner
-    <div className='container mx-auto relative'>
+    <div className='container mx-[30px] my-5 relative'>
       <div style={{position:'relative'}}>
       <button style={{position:'absolute',top:'46%',left:'44%'}} className="btn btn-primary rounded-3xl">Start your Journey</button>
   <div className='flex px-1 py-1' > 
@@ -36,8 +37,8 @@ console.log(img[0]?.image?.url)
 
 </div>
 <div>
-<div className="container mx-auto">
-            <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+<div className="container mx-auto ">
+            <div className="flex items-center justify-center w-100 h-full py-24 sm:py-8 px-4">
                 {/* Carousel for desktop and large size devices */}
                 <CarouselProvider className="lg:block hidden" naturalSlideWidth={100} naturalSlideHeight={125} isIntrinsicHeight={true} totalSlides={3} isPlaying={true} visibleSlides={2} step={1} infinite={true} interval={3000} >
                     <div className="w-full relative flex items-center justify-center">
@@ -48,30 +49,90 @@ console.log(img[0]?.image?.url)
                         </ButtonBack>
                         <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
                             <Slider>
-                                <div id="slider" className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                                <div id="slider" className="h-full flex lg:gap-8 md:gap-10 gap-14 items-center justify-start transition ease-out duration-900">
                                     <Slide  >
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src={solar1} alt="black chair and white table" className="object-cover object-center w-full h-24 rounded-2xl" />
+                                            <img src={solar1} alt="black chair and white table" className="object-cover object-center w-full h-24 " 
+                                            />
+                                             <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                              <Link to="../Customer">
+        <button className="bg-blue-300 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-lg" >
+          Know Our Customer
+        </button>
+        </Link>
                                         
-                                        </div>
+        </div> </div>
                                     </Slide>
                                     <Slide >
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src={solar2} alt="sitting area" className="object-cover object-center w-full h-24 rounded-2xl" />
+                                            <img src={solar2} alt="sitting area" className="object-cover object-center w-full h-24 " />
+                                            <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                            <Link to="../Customer">
+        <button className="bg-blue-300 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-lg" >
+          Know Our Customer
+        </button>
+        </Link>
+                                        
+        </div>
                                            
                                         </div>
                                     </Slide>
                                     <Slide >
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src={solar3} alt="sitting area" className="object-cover object-center w-full h-24 rounded-2xl" />
+                                            <img src={solar3} alt="sitting area" className="object-cover object-center w-full h-24 " />
+                                            <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                            <Link to="../Customer">
+        <button className="bg-blue-300 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-lg" >
+          Know Our Customer
+        </button>
+        </Link>
+                                        
+        </div>
                                           
                                         </div>
                                     </Slide>
                                     <Slide >
                                         <div className="flex flex-shrink-0 relative w-full h-24 sm:w-auto">
-                                            <img src={solar4} alt="sitting area" className="object-cover object-center w-full rounded-2xl" />
+                                            <img src={solar4} alt="sitting area" className="object-cover object-center w-full " />
+                                            <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                            <Link to="../Customer">
+        <button className="bg-blue-300 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-lg" >
+          Know Our Customer
+        </button>
+        </Link>
+                                        
+        </div>
                                             
                                         </div>
+                                    </Slide>
+                                    <Slide >
+                                        <div className="flex flex-shrink-0 relative w-full h-24 sm:w-auto">
+                                            <img src={solar4} alt="sitting area" className="object-cover object-center w-full " />
+                                            <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                            <Link to="../Customer">
+        <button className="bg-blue-300 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-lg" >
+          Know Our Customer
+        </button>
+        </Link>
+                                        
+        </div>
+                                            
+                                            
+                                        </div>
+                                    </Slide>
+                                    <Slide >
+                                        <div className="flex flex-shrink-0 relative w-full h-24 sm:w-auto">
+                                            <img src={solar4} alt="sitting area" className="object-cover object-center w-full " />
+                                            <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                            <Link to="../Customer">
+        <button className="bg-blue-300 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-lg" >
+          Know Our Customer
+        </button>
+        </Link>
+                                        
+        </div>
+                                            
+                         </div>
                                     </Slide>
                                 </div>
                             </Slider>

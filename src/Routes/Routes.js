@@ -7,6 +7,10 @@ import Projects from "../component/Project/Projects";
 import PrivateRoute from "./PrivateRoute";
 import DashboardLayout from "../Layout/DashboardLayout";
 import HomeImage from "../component/Pages/Dashboard/HomeImage";
+import Dashboard from "../component/Pages/Dashboard/Dashboard"
+import Customer from "../component/Customer/Customer";
+import LogImage from "../component/Pages/Dashboard/LogImage";
+import TableForm from "../component/Pages/Dashboard/TableForm";
 
 
 
@@ -31,6 +35,10 @@ export const router =createBrowserRouter([
             path:'/project',
             element:<Projects></Projects>
         },
+        {
+            path:'/customer',
+            element:<Customer></Customer>
+        },
       
     ]
     },
@@ -42,6 +50,14 @@ export const router =createBrowserRouter([
             {
                 path:'/dashboard',
                 element:<HomeImage></HomeImage>
+            },
+            {
+                path:'/dashboard/logoimg',
+                element:<LogImage></LogImage>
+            },
+            {
+                path:'/dashboard/tabledata',
+                element:<TableForm></TableForm>
             }
         ]
     }

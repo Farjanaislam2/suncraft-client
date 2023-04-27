@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../component/Home/Nav';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 const DashboardLayout = () => {
     return (
@@ -17,8 +17,10 @@ const DashboardLayout = () => {
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
         <ul className="menu p-4 w-80 bg-base-100 text-base-content">
 
-          <li><a>Sidebar Item 1</a></li>
-          <li><a>Sidebar Item 2</a></li>
+          <li><Link to='/dashboard'>Add Home Image</Link>
+          </li>
+          <li><Link to='/dashboard/logoimg'>Add Logo Image</Link></li>
+          <li><Link to='/dashboard/tabledata'>Add Table Data</Link></li>
         </ul>
       
       </div>
