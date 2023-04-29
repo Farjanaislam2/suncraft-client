@@ -30,7 +30,8 @@ const Nav = () => {
                 <div className="dropdown">
                     <label tabIndex={0}
                         className="btn btn-ghost ">
-                        <image src={img} alt="#"/>
+                           
+                        <img src={img} alt="#"/>
                     </label>
                     <ul tabIndex={0}
                         className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
@@ -66,7 +67,7 @@ const Nav = () => {
                        
                     </ul>
                 </div>
-                <image className='' src={img} alt="#"/>
+                <img className='' src={img} alt="#"/>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 py-1">
