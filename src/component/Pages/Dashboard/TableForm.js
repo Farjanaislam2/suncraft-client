@@ -1,49 +1,50 @@
 import React from "react";
+import { toast } from "react-hot-toast";
 
 const TableForm = () => {
 
-  const handleSubmit=event=>{
+  const handleSubmit= event=>{
     event.preventDefault();
 
     const form=event.target;
     const code =form.code.value;
-    const capasity=form.code.value;
-    const location=form.code.value;
-    const duration=form.code.value;
-    const status=form.code.value;
-    const rate=form.code.value;
-    const avalable=form.code.value;
-    console.log(code,capasity,location,duration,status,rate,avalable)
+    const capasity=form.capasity.value;
+    const location=form.location.value;
+    const duration=form.duration.value;
+    const status=form.status.value;
+    const rate=form.rate.value;
+    const avalable=form.avalable.value;
 
+
+    
+const allData={code,capasity,location,duration,status,rate,avalable}
+    console.log(allData)
 
 
         // TODO: send data to the server
         // and once data is saved then close the modal 
         // and display success toast
-        fetch('http://localhost:5000/bookings', {
+        fetch('http://localhost:5000/allData', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(booking)
+            body: JSON.stringify(allData)
         })
             .then(res => res.json())
             .then(data => {
                 console.log(data);
                 if (data.acknowledged) {
-                    setTreatment(null);
-                    toast.success('Booking confirmed');
-                    refetch();
+                    
+                    toast.success('allData confirmed');
+                    // refetch();
                 }
                 else{
                     toast.error(data.message);
                 }
             })
-
-
-    }
-  
-
+    
+  }
 
 
 
@@ -54,7 +55,7 @@ const TableForm = () => {
       </h1>
       <div className="mx-[150px]  mt-[30px] border border-2 h-[700px] p-2 rounded-md border-gray-600">
         <form onSubmit={handleSubmit}>
-        <div className="form-control  max-w-xs mx-10 ">
+        <div className="  max-w-xs mx-10 ">
           <label className="label">
             <span className="label-text">Project Code</span>
           </label>
@@ -66,7 +67,7 @@ const TableForm = () => {
           />
         </div>
 
-        <div className="form-control  max-w-xs mx-10 ">
+        <div className="  max-w-xs mx-10 ">
           <label className="label">
             <span className="label-text">Project Location</span>
           </label>
@@ -78,7 +79,7 @@ const TableForm = () => {
           />
         </div>
 
-        <div className="form-control  max-w-xs mx-10 ">
+        <div className="  max-w-xs mx-10 ">
           <label className="label">
             <span className="label-text">Project Capacity</span>
           </label>
@@ -90,7 +91,7 @@ const TableForm = () => {
           />
         </div>
 
-        <div className="form-control  max-w-xs mx-10 ">
+        <div className="  max-w-xs mx-10 ">
           <label className="label">
             <span className="label-text">PPA Duration</span>
           </label>
@@ -102,7 +103,7 @@ const TableForm = () => {
           />
         </div>
 
-        <div className="form-control  max-w-xs mx-10 ">
+        <div className="  max-w-xs mx-10 ">
           <label className="label">
             <span className="label-text">Project status</span>
           </label>
@@ -114,7 +115,7 @@ const TableForm = () => {
           />
         </div>
 
-        <div className="form-control  max-w-xs mx-10 ">
+        <div className="  max-w-xs mx-10 ">
           <label className="label">
             <span className="label-text">PPA rate</span>
           </label>
@@ -126,7 +127,7 @@ const TableForm = () => {
           />
         </div>
 
-        <div className="form-control  max-w-xs mx-10 ">
+        <div className="  max-w-xs mx-10 ">
           <label className="label">
             <span className="label-text">Buy Project / Sold Out</span>
           </label>
