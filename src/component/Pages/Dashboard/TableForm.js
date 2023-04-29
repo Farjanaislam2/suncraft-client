@@ -17,7 +17,7 @@ const TableForm = () => {
 
 
     
-const allData={code,capasity,location,duration,status,rate,avalable}
+const allData={code,capasity,location,duration,status,rate}
     console.log(allData)
 
 
