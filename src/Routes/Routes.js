@@ -5,8 +5,12 @@ import Login from "../component/Pages/Login/Login";
 import Signup from "../component/Pages/Signup/Signup";
 import Projects from "../component/Project/Projects";
 import PrivateRoute from "./PrivateRoute";
+import DashboardLayout from "../Layout/DashboardLayout";
+import HomeImage from "../component/Pages/Dashboard/HomeImage";
 import Dashboard from "../component/Pages/Dashboard/Dashboard"
 import Customer from "../component/Customer/Customer";
+import LogImage from "../component/Pages/Dashboard/LogImage";
+import TableForm from "../component/Pages/Dashboard/TableForm";
 
 
 
@@ -40,7 +44,21 @@ export const router =createBrowserRouter([
     },
     {
         path:'/dashboard',
-        element:<PrivateRoute><Dashboard></Dashboard>
-        </PrivateRoute>
+        element:<PrivateRoute><DashboardLayout></DashboardLayout>
+        </PrivateRoute>,
+        children:[
+            {
+                path:'/dashboard',
+                element:<HomeImage></HomeImage>
+            },
+            {
+                path:'/dashboard/logoimg',
+                element:<LogImage></LogImage>
+            },
+            {
+                path:'/dashboard/tabledata',
+                element:<TableForm></TableForm>
+            }
+        ]
     }
 ])
