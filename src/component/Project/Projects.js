@@ -4,11 +4,15 @@ import projectData from "../Project/Projects.json";
 export default function Projects() {
     const [projects,setProjects]=useState([])
     useEffect(()=>{
-     setProjects(projectData.projects)
-    },[])
+       
+            fetch('http://localhost:5000/getTableData')
+            .then(res => res.json())
+            .then(data=>setProjects(data ))
+                } ,[])
+ 
     console.log(projects)
     return (
-        <div className="flex  justify-center ">
+        <div className="flex mt-10 mb-10 justify-center ">
             <div className="overflow-x-auto ">
                 <div className="p-1.5 w-full inline-block align-middle">
                     <div className="overflow-hidden border rounded-lg">
@@ -62,25 +66,25 @@ export default function Projects() {
                             <tbody className="divide-y divide-gray-200">
                                     {
                                         projects.map((project,index)=><tr key={index}> <td className="px-12 py-4 text-sm font-medium text-gray-800 whitespace-nowrap ">
-                                        {project.projectcode}
+                                        {project.code}
                                     </td>
                                     <td className="px-12 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        {project.projectlocation}
+                                        {project.location}
                                     </td>
                                     <td className="px-14 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        {project.projectcapacity}
+                                        {project.capasity}
                                     </td>
                                     <td className="px-14 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        {project.ppaduration}
+                                        {project.duration}
                                     </td>
                                     <td className="px-9 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        {project.projectstatus}
+                                        {project.status}
                                     </td>
                                     <td className="px-10 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        {project.pparate}
+                                        {project.rate}
                                     </td>
                                     <td className="px-20 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                                        {project.buyproject}
+                                        {project.avalable}
                                     </td>
                                     </tr>)
                                     }

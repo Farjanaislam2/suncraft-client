@@ -4,7 +4,6 @@ import { toast } from "react-hot-toast";
 const TableForm = () => {
 
   const handleSubmit= event=>{
-    console.log("event run")
     event.preventDefault();
 
     const form=event.target;
@@ -19,32 +18,23 @@ const TableForm = () => {
 
 
     
-const allData={code,capasity,location,duration,status,rate}
+const allData={code,capasity,location,duration,status,rate,avalable}
     console.log(allData)
 
 
-        // TODO: send data to the server
-        // and once data is saved then close the modal 
-        // and display success toast
-        fetch('http://localhost:5000/allData', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(allData)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                if (data.acknowledged) {
-                    
-                    toast.success('allData confirmed');
-                    // refetch();
-                }
-                else{
-                    toast.error(data.message);
-                }
-            })
+    fetch("http://localhost:5000/addTableData", {
+                method: "POST",
+                headers: {
+                  "content-type": "application/json",
+                },
+                body: JSON.stringify(allData),
+              })
+                .then((res) => res.json())
+                .then((data) => {
+                  console.log(data);
+                });
+            
+  
     
   }
 
