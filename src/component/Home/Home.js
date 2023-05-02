@@ -18,6 +18,8 @@ import solar2 from '../images/solar2.png';
 import solar3 from '../images/solar3.jpg';
 import solar4 from '../images/solar4.jpg';
 import { Link } from 'react-router-dom';
+import './home.css';
+import { Button } from '@mui/material';
 
 const Home = () => {
  
@@ -61,15 +63,18 @@ console.log(img[0]?.image?.url)
         modules={[Navigation, Pagination,  A11y, Autoplay]}
         spaceBetween={5}
         slidesPerView={6}
-        autoplay ={{delay: 1000}}
+        autoplay ={{disableOnInteraction: false, 
+          delay: 1000,
+          pauseOnMouseEnter: true,}}
         pagination={{ clickable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
+        
       >
     
         <SwiperSlide>
          
-          <div className="col-1 w-1/2 ">
+          <div className="col-1 w-1/2 contain ">
           <img className="w-auto pt-7 pb-8 bg-white p-2" src={solar1} alt="" />
           {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity w-full">
           <Link to="../Customer" > 
@@ -78,71 +83,108 @@ console.log(img[0]?.image?.url)
       </button>
     </Link>
     </div> */}
+    
+    <div className='overlay'>
+    <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
          
-          <div className="col-1 w-1/2">
+          <div className="col-1 w-1/2 contain">
           <img className="w-auto pt-8 pb-8 bg-white p-2" src={solar2} alt="" />
+          <div className='overlay'>
+          <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
          
-          <div className="col-1 w-1/2">
+          <div className="col-1 w-1/2 contain">
           <img className="w-auto bg-white p-2 pt-10 pb-10" src={solar3} alt="" />
+          <div className='overlay'>
+          <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="col-1 w-1/2">
+        <div className="col-1 w-1/2 contain">
           <img className="w-auto bg-white p-2" src={solar4} alt="" />
+          <div className='overlay'>
+          <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
          
-        <div className="col-1 w-1/2">
+        <div className="col-1 w-1/2 contain">
             <img className="w-auto bg-white p-2 pt-3 pb-3" src={solar1} alt="" />
+            <div className='overlay'>
+            <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
          
-        <div className="col-1 w-1/2">
-            <img className="w-auto  pb-10" src={solar2} alt="" />
+        <div className="col-1 w-1/2 contain">
+            <img className="w-auto  pb-10" src={solar2} alt="" /> 
+            <div className='overlay'>
+            <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
          
-          <div className="col-1 w-1/2">
+          <div className="col-1 w-1/2 contain">
             <img className="w-auto pt-7 pb-8 bg-white p-2" src={solar3} alt="" />
+            <div className='overlay'>
+            <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
          
-          <div className="col-1 w-1/2">
+          <div className="col-1 w-1/2 contain">
             <img className="w-auto pt-8 pb-8 bg-white p-2" src={solar4} alt="" />
+            <div className='overlay'>
+            <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
           </SwiperSlide>
         <SwiperSlide>
          
-          <div className="col-1 w-1/2">
+          <div className="col-1 w-1/2 contain">
             <img className="w-auto bg-white p-2 pt-10 pb-10" src={solar1} alt="" />
+            <div className='overlay'>
+            <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
          
-          <div className="col-1 w-1/2">
+          <div className="col-1 w-1/2 contain">
             <img className="w-auto bg-white p-2" src={solar2} alt="" />
+            <div className='overlay'>
+            <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
          
-          <div className="col-1 w-1/2">
-            <img className="w-auto bg-white p-2 pt-3 pb-3" src={solar3} alt="" />
+          <div className="col-1 w-1/2 contain">
+            <img className="w-auto bg-white p-2 pt-3 pb-3" src={solar3} alt="" /> 
+            <div className='overlay'>
+            <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
          
-          <div className="col-1 w-1/2">
+          <div className="col-1 w-1/2 contain">
             <img className="w-auto  pb-10" src={solar4} alt="" />
+            <div className='overlay'>
+            <button className='custom'>Know Our Customer</button>
+    </div>
           </div>
         </SwiperSlide>
       </Swiper>
