@@ -7,6 +7,7 @@ const TableForm = () => {
     event.preventDefault();
 
     const form=event.target;
+    console.log(form)
     const code =form.code.value;
     const capasity=form.capasity.value;
     const location=form.location.value;
@@ -17,32 +18,23 @@ const TableForm = () => {
 
 
     
-const allData={code,capasity,location,duration,status,rate}
+const allData={code,capasity,location,duration,status,rate,avalable}
     console.log(allData)
 
 
-        // TODO: send data to the server
-        // and once data is saved then close the modal 
-        // and display success toast
-        fetch('http://localhost:5000/allData', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(allData)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                if (data.acknowledged) {
-                    
-                    toast.success('allData confirmed');
-                    // refetch();
-                }
-                else{
-                    toast.error(data.message);
-                }
-            })
+    fetch("http://localhost:5000/addTableData", {
+                method: "POST",
+                headers: {
+                  "content-type": "application/json",
+                },
+                body: JSON.stringify(allData),
+              })
+                .then((res) => res.json())
+                .then((data) => {
+                  console.log(data);
+                });
+            
+  
     
   }
 
@@ -64,6 +56,7 @@ const allData={code,capasity,location,duration,status,rate}
             name="code"
             placeholder="Type here"
             className="input input-bordered w-96  max-w-xs"
+            required
           />
         </div>
 
@@ -76,6 +69,7 @@ const allData={code,capasity,location,duration,status,rate}
             name="location"
             placeholder="Type here"
             className="input input-bordered w-96  max-w-xs"
+            required
           />
         </div>
 
@@ -88,6 +82,7 @@ const allData={code,capasity,location,duration,status,rate}
             name="capasity"
             placeholder="Type here"
             className="input input-bordered w-96  max-w-xs"
+            required
           />
         </div>
 
@@ -100,6 +95,7 @@ const allData={code,capasity,location,duration,status,rate}
             name="duration"
             placeholder="Type here"
             className="input input-bordered w-96  max-w-xs"
+            required
           />
         </div>
 
@@ -112,7 +108,7 @@ const allData={code,capasity,location,duration,status,rate}
             name="status"
             placeholder="Type here"
             className="input input-bordered w-96  max-w-xs"
-          />
+           required/>
         </div>
 
         <div className="  max-w-xs mx-10 ">
@@ -124,6 +120,7 @@ const allData={code,capasity,location,duration,status,rate}
             name="rate"
             placeholder="Type here"
             className="input input-bordered w-96  max-w-xs"
+            required
           />
         </div>
 
@@ -136,12 +133,14 @@ const allData={code,capasity,location,duration,status,rate}
             name="avalable"
             placeholder="Type here"
             className="input input-bordered w-96  max-w-xs"
+            required
           />
         </div>
-        </form>
         <button className="btn mt-8  w-[310px] ml-12 " type="submit">
           Post
         </button>
+        </form>
+      
       </div>
     </div>
   );
