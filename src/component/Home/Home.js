@@ -26,12 +26,40 @@ console.log(img[0]?.image?.url)
       <button style={{position:'absolute',top:'46%',left:'44%'}} className="btn btn-primary rounded-3xl">Start your Journey</button>
   <div className='flex px-1 py-1' > 
     <img className='object-cover h-80 w-full' src={img[0]?.image?.url} alt="#"/> 
+    <div className="dropdown dropdown-left">
+  <label tabIndex={0} className="btn m-1">Click</label>
+  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+    <li><a>Delete</a></li>
+    <li><a>Edit</a></li>
+  </ul>
+</div>
     
     <img className='object-cover h-80 w-full' src={img[1]?.image?.url} alt="#"/> 
+    <div className="dropdown dropdown-left">
+  <label tabIndex={0} className="btn m-1">Click</label>
+  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+    <li><a>Delete</a></li>
+    <li><a>Edit</a></li>
+  </ul>
+</div>
   </div>
   <div className='flex px-1 py-1'> 
     <img className='object-cover h-80 w-full' src={img[2]?.image?.url} alt="#"/> 
+    <div className="dropdown dropdown-left relative">
+  <label tabIndex={0} className="btn m-1">Click</label>
+  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+    <li><a>Delete</a></li>
+    <li><a>Edit</a></li>
+  </ul>
+</div>
     <img className='object-cover h-80 w-full' src={img[3]?.image?.url} alt="#"/> 
+    <div className="dropdown dropdown-left">
+  <label tabIndex={0} className="btn m-1">Click</label>
+  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+    <li><a>Delete</a></li>
+    <li><a>Edit</a></li>
+  </ul>
+</div>
   </div>
 </div>
 <div>
