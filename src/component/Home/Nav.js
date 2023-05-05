@@ -34,7 +34,7 @@ const Nav = () => {
                       
                     </label>
                     <ul tabIndex={0}
-                        className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 md">
                         <li>
                             <a className='text-lg'>Home</a>
                         </li>
@@ -67,7 +67,7 @@ const Nav = () => {
                        
                     </ul>
                 </div>
-                <img className='w-[140px]' src={img} alt="#"/>
+               <Link to='/'> <img className='w-[140px]' src={img} alt="#"/></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 py-1">
