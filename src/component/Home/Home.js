@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Slider from './Slider';
+import { HiDotsVertical } from "react-icons/hi";
 
 
 const Home = () => {
@@ -27,7 +28,9 @@ console.log(img[0]?.image?.url)
   <div className='flex px-1 py-1' > 
     <img className='object-cover h-80 w-full' src={img[0]?.image?.url} alt="#"/> 
     <div className="dropdown dropdown-left">
-  <label tabIndex={0} className="btn m-1">Click</label>
+    <button onClick={HiDotsVertical}>
+    <HiDotsVertical/>
+</button>
   <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a>Delete</a></li>
     <li><a>Edit</a></li>
@@ -36,7 +39,9 @@ console.log(img[0]?.image?.url)
     
     <img className='object-cover h-80 w-full' src={img[1]?.image?.url} alt="#"/> 
     <div className="dropdown dropdown-left">
-  <label tabIndex={0} className="btn m-1">Click</label>
+    <button onClick={HiDotsVertical}>
+    <HiDotsVertical/>
+</button>
   <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a>Delete</a></li>
     <li><a>Edit</a></li>
@@ -46,7 +51,9 @@ console.log(img[0]?.image?.url)
   <div className='flex px-1 py-1'> 
     <img className='object-cover h-80 w-full' src={img[2]?.image?.url} alt="#"/> 
     <div className="dropdown dropdown-left relative">
-  <label tabIndex={0} className="btn m-1">Click</label>
+    <button onClick={HiDotsVertical}>
+    <HiDotsVertical/>
+</button>
   <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a>Delete</a></li>
     <li><a>Edit</a></li>
@@ -54,7 +61,9 @@ console.log(img[0]?.image?.url)
 </div>
     <img className='object-cover h-80 w-full' src={img[3]?.image?.url} alt="#"/> 
     <div className="dropdown dropdown-left">
-  <label tabIndex={0} className="btn m-1">Click</label>
+    <button onClick={HiDotsVertical}>
+    <HiDotsVertical/>
+</button>
   <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a>Delete</a></li>
     <li><a>Edit</a></li>
