@@ -39,65 +39,61 @@ const Nav = () => {
                             <a className='text-lg'>Home</a>
                         </li>
                         <li>
-                        <a className='text-lg'>About Us</a>
+                        <a className='text-lg '>About Us</a>
                     </li>
                     <li>
-                        <a className='text-lg'>Consulting</a>
+                        <a className='text-lg '>Consulting</a>
                     </li>
                     <li>
-                        <a className='text-lg'>Projects</a>
+                        <a className='text-lg '>Projects</a>
              
                     </li>
                     <li>
-                        <a className='text-lg'>Products</a>
+                        <a className='text-lg '>Products</a>
                     </li>
                     <li>
-                        <a className='text-lg'>Productive Load Applications</a>
+                        <a className='text-lg '>Productive Load Applications</a>
                     </li>
                     <li>
-                        <a className='text-lg'>Investment Opportunitoes</a>
+                        <a className='text-lg '>Investment Opportunitoes</a>
                     </li>
+                   <br></br>
                     <li>
-                        <a className='text-lg'>Contact Us</a>
-                    </li>
-                    <li>
-                        <a className='text-lg'>Work With Us</a>
+                        <a className='text-lg '>Work With Us</a>
                     </li>
                       
                        
                     </ul>
                 </div>
-               <Link to='/'> <img className='w-[140px]' src={img} alt="#"/></Link>
+               <Link to='/'> <img className='w-[190px]' src={img} alt="#"/></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 py-1">
                     <li>
-                        <Link className='text-lg' to="/">Home</Link>
+                        <Link className='text-lg font-semibold' to="/">Home</Link>
                        
                     </li>
                     <li>
-                        <a className='text-lg'>About Us</a>
+                    <Link className='text-lg font-semibold' to='/About'>About Us</Link> 
                     </li>
                     <li>
-                       <Link className='text-lg' to='/login'>Consulting</Link> 
+                       <Link className='text-lg font-semibold' to='/login'>Consulting</Link> 
                     </li>
                     <li>
-                        <Link to="../Project" className='text-lg'>Projects</Link>
+                        <Link to="../Project" className='text-lg font-semibold'>Projects</Link>
                     </li>
                     <li>
-                        <a className='text-lg'>Products</a>
+                        <a className='text-lg font-semibold'>Products</a>
                     </li>
                     <li>
-                        <a className='text-lg w-[180px]'>Productive Load Applications</a>
+                        <a className='text-lg w-[180px] font-semibold'>Productive Load Applications</a>
                     </li>
                     <li>
-                        <a className='text-lg w-[120px]'>Investment Opportunities</a>
+                        <a className='text-lg w-[120px] font-semibold'>Investment Opportunities</a>
                     </li>
+                    
                     <li>
-                        <a className='text-lg'>Contact Us</a>
-                    </li>
-                    <li>
-                        <a className='text-lg'>Work With Us</a>
+                        <a className='text-lg font-semibold'>Work With Us</a>
                     </li>
                   
                  

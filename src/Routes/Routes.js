@@ -11,6 +11,7 @@ import Dashboard from "../component/Pages/Dashboard/Dashboard"
 import Customer from "../component/Customer/Customer";
 import LogImage from "../component/Pages/Dashboard/LogImage";
 import TableForm from "../component/Pages/Dashboard/TableForm";
+import About from "../component/About/About";
 
 
 
@@ -35,10 +36,16 @@ export const router =createBrowserRouter([
             path:'/project',
             element:<Projects></Projects>
         },
+     
+        {
+            path:'/about',
+            element:<About></About>
+        },
         {
             path:'/customer',
             element:<Customer></Customer>
         },
+        
       
     ]
     },
