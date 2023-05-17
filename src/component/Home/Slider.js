@@ -67,7 +67,7 @@ const Slider = () => {
 
 
                   <div className='overlay'>
-                    <button className='custom'>Know Our Customer</button>
+                  <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
                   </div>
                 </div>
               </SwiperSlide>)}
@@ -77,9 +77,7 @@ const Slider = () => {
           <div className="col-1 w-1/2 contain">
           <img className="w-auto pt-8 pb-8 bg-white p-2" src={solar2} alt="" />
           <div className='overlay'>
-          <button className='custom'>
-          Know Our Customer
-            </button>
+          <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
         </SwiperSlide>
@@ -88,7 +86,7 @@ const Slider = () => {
           <div className="col-1 w-1/2 contain">
           <img className="w-auto bg-white p-2 pt-10 pb-10" src={solar3} alt="" />
           <div className='overlay'>
-          <button className='custom'>Know Our Customer</button>
+          <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
         </SwiperSlide>
@@ -96,7 +94,7 @@ const Slider = () => {
         <div className="col-1 w-1/2 contain">
           <img className="w-auto bg-white p-2" src={solar4} alt="" />
           <div className='overlay'>
-          <button className='custom'>Know Our Customer</button>
+          <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
         </SwiperSlide>
@@ -105,7 +103,7 @@ const Slider = () => {
         <div className="col-1 w-1/2 contain">
             <img className="w-auto bg-white p-2 pt-3 pb-3" src={solar1} alt="" />
             <div className='overlay'>
-            <button className='custom'>Know Our Customer</button>
+            <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
         </SwiperSlide>
@@ -114,7 +112,7 @@ const Slider = () => {
         <div className="col-1 w-1/2 contain">
             <img className="w-auto  pb-10" src={solar2} alt="" /> 
             <div className='overlay'>
-            <button className='custom'>Know Our Customer</button>
+            <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
         </SwiperSlide>
@@ -123,7 +121,7 @@ const Slider = () => {
           <div className="col-1 w-1/2 contain">
             <img className="w-auto pt-7 pb-8 bg-white p-2" src={solar3} alt="" />
             <div className='overlay'>
-            <button className='custom'>Know Our Customer</button>
+            <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
         </SwiperSlide>
@@ -132,7 +130,7 @@ const Slider = () => {
           <div className="col-1 w-1/2 contain">
             <img className="w-auto pt-8 pb-8 bg-white p-2" src={solar4} alt="" />
             <div className='overlay'>
-            <button className='custom'>Know Our Customer</button>
+            <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
           </SwiperSlide>
@@ -141,7 +139,7 @@ const Slider = () => {
           <div className="col-1 w-1/2 contain">
             <img className="w-auto bg-white p-2 pt-10 pb-10" src={solar1} alt="" />
             <div className='overlay'>
-            <button className='custom'>Know Our Customer</button>
+            <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
         </SwiperSlide>
@@ -150,7 +148,7 @@ const Slider = () => {
           <div className="col-1 w-1/2 contain">
             <img className="w-auto bg-white p-2" src={solar2} alt="" />
             <div className='overlay'>
-            <button className='custom'>Know Our Customer</button>
+            <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
         </SwiperSlide>
@@ -159,7 +157,7 @@ const Slider = () => {
           <div className="col-1 w-1/2 contain">
             <img className="w-auto bg-white p-2 pt-3 pb-3" src={solar3} alt="" /> 
             <div className='overlay'>
-            <button className='custom'>Know Our Customer</button>
+            <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
         </SwiperSlide>
@@ -168,7 +166,7 @@ const Slider = () => {
           <div className="col-1 w-1/2 contain">
             <img className="w-auto  pb-10" src={solar4} alt="" />
             <div className='overlay'>
-            <button className='custom'>Know Our Customer</button>
+            <Link to='/customer'>  <button className='custom'>Know Our Customer</button></Link>
     </div>
           </div>
         </SwiperSlide>

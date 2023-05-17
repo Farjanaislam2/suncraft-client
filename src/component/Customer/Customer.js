@@ -1,24 +1,72 @@
 import React from 'react';
 
+const Customer = () => {
+  const customers = [
+    {
+      id: 1,
+      name: 'Customer 1',
+      imageUrl: 'https://1000logos.net/wp-content/uploads/2020/10/Aegon-Logo.png',
+      mapAreas: [
+        { shape: 'rect', coords: '0,0,200,200', href: '#', alt: 'Area 1' },
+        { shape: 'rect', coords: '200,0,400,200', href: '#', alt: 'Area 2' },
+      ],
+    },
+    {
+      id: 2,
+      name: 'Customer 2',
+      imageUrl: 'https://1000logos.net/wp-content/uploads/2018/01/Airtel-Logo.png',
+      mapAreas: [
+        { shape: 'rect', coords: '0,0,300,200', href: '#', alt: 'Area 1' },
+        { shape: 'rect', coords: '300,0,600,200', href: '#', alt: 'Area 2' },
+      ],
+    },
+    {
+      id: 3,
+      name: 'Customer 3',
+      imageUrl: 'https://1000logos.net/wp-content/uploads/2021/12/Bflix-Movies-Logo.png',
+      mapAreas: [
+        { shape: 'rect', coords: '0,0,300,200', href: '#', alt: 'Area 1' },
+        { shape: 'rect', coords: '300,0,600,200', href: '#', alt: 'Area 2' },
+      ],
+    },
+    {
+      id: 4,
+      name: 'Customer 4',
+      imageUrl: 'https://1000logos.net/wp-content/uploads/2021/02/Bharat-Petroleum-logo.png',
+      mapAreas: [
+        { shape: 'rect', coords: '0,0,300,200', href: '#', alt: 'Area 1' },
+        { shape: 'rect', coords: '300,0,600,200', href: '#', alt: 'Area 2' },
+      ],
+    },
+  ];
 
-function Customer(props) {
-    return (
-        <div>
-              <div className="flex flex-col items-center justify-center h-screen ">
-      <h1 className="text-4xl font-bold mb-8">Know Our Customer</h1>
-      <div className="max-w-md">
-        <p className="text-lg mb-4">At our company, we believe that understanding our customers is key to providing the best possible service. Here are some things we know about our customers:</p>
-        <ul className="list-disc ml-8">
-          <li className="mb-2">They value quality over quantity</li>
-          <li className="mb-2">They prioritize sustainability</li>
-          <li className="mb-2">They value transparency and honesty</li>
-          <li className="mb-2">They are interested in learning more about our company and our values</li>
-        </ul>
-        <p className="text-lg mt-8">We're always looking for ways to better serve our customers and meet their needs. If you have any feedback or suggestions, please don't hesitate to reach out to us!</p>
+  return (
+    <div className="flex flex-col items-center">
+      <h1 className="text-4xl font-bold mb-4 py-2 text-cyan-500">Our Customers</h1>
+      <div className="grid grid-cols-4 gap-8 px-5 ">
+        {customers.map((customer) => (
+          <div key={customer.id}>
+            <div className="max-w-full overflow-y-auto">
+              <img src={customer.imageUrl} alt={customer.name} />
+            </div>
+            <div className="max-w-full overflow-y-auto">
+              <map name={`map-${customer.id}`}>
+                {customer.mapAreas.map((area, index) => (
+                  <area
+                    key={index}
+                    shape={area.shape}
+                    coords={area.coords}
+                    href={area.href}
+                    alt={area.alt}
+                  />
+                ))}
+              </map>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
-        </div>
-    );
-}
+  );
+};
 
 export default Customer;
