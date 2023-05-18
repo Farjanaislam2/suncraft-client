@@ -38,7 +38,10 @@ function About(props) {
                             </div>
                             <div>
                                 <img src={video.imageUrl} alt="#" />
+
+
                             </div>
+
                         </div>
                     ))}
                 </div>
