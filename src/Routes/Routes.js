@@ -12,6 +12,7 @@ import Customer from "../component/Customer/Customer";
 import LogImage from "../component/Pages/Dashboard/LogImage";
 import TableForm from "../component/Pages/Dashboard/TableForm";
 import About from "../component/About/About";
+import AboutUs from "../component/Pages/Dashboard/AboutUs";
 
 
 
@@ -65,7 +66,11 @@ export const router =createBrowserRouter([
             {
                 path:'/dashboard/tabledata',
                 element:<TableForm></TableForm>
-            }
+            },
+            {
+                path:'/dashboard/about',
+                element:<AboutUs></AboutUs>
+            },
         ]
     }
 ])

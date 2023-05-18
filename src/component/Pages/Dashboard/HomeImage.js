@@ -50,15 +50,11 @@ const HomeImage = () => {
 
   return (
     <div className="mx-[30px] mt-5 flex flex-col">
-      <p>Add Home Image</p>
+      <p className='text-2xl font-bold mb-3'>Add Home Image</p>
       <form onSubmit={handleImageClick}>
-        <input
-          name="homeImage"
-          type="file"
-          placeholder="Type here"
-          className="input input-bordered w-full max-w-xs"
-        />
-        <button className="btn mx-10 " type="submit">
+      <input type="file"  name="homeImage" className="file-input w-full max-w-xs" />
+       
+        <button className="btn mt-5 " type="submit">
           Post
         </button>
       </form>

@@ -1,10 +1,25 @@
 import React from 'react';
 
-const LogImage = () => {
-    const handleImageClick = async (event) => {
+const AboutUs = () => {
+
+    const handleSubmit=async(event)=>{
         event.preventDefault();
+    
+        const form=event.target;
+        console.log(form)
+       
+        const capasity=form.capasity.value;
         const file = event.target.homeImage.files[0];
-        console.log(file);
+        const video = event.target.video.value;
+     
+    const allData={capasity,file}
+
+        console.log(allData)
+
+
+      
+       
+       
     
         if (file) {
           try {
@@ -48,17 +63,46 @@ const LogImage = () => {
         }
       };
     return (
-        <div className="mx-[30px] mt-5 flex flex-col">
-        <p className='text-2xl font-bold mb-3'>Add Logo</p>
-        <form onSubmit={handleImageClick}>
-        <input type="file"  name="homeImage" className="file-input w-full max-w-xs" />
+        <div>
+              <form className='border border-gray-800 rounded p-5 mx-10 mt-16' onSubmit={handleSubmit}>
+        
+
+        <div className="  max-w-xs mx-10 ">
+          <label className="label">
+            <span className="label-text">Text</span>
+          </label>
+          <input
+            type="text"
+            name="avalable"
+            placeholder="Type here"
+            className="input input-bordered w-96  max-w-xs"
+            required
+          />
+        </div>
+
+        <div className="mx-[39px]  flex flex-col">
+        <label className="label">
+            <span className="label-text">Image</span>
+          </label>
+        <input type="file"  name="homeImage" className="file-input w-96  max-w-xs " />
+          
+        
+      </div>
+      <div className="mx-[35px]  flex flex-col">
+        <label className="label">
+            <span className="label-text">Video</span>
+          </label>
+          <input type="video/mp4" name='video' className='w-[320px] rounded-md p-3' 
+          placeholder="Enter video URL" />
           
           <button className="btn m- mt-5 " type="submit">
             Post
           </button>
-        </form>
       </div>
+        </form>
+              
+        </div>
     );
 };
 
-export default LogImage;
+export default AboutUs;
