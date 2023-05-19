@@ -77,7 +77,7 @@ const Nav = () => {
                     <Link className='text-lg font-semibold' to='/About'>About Us</Link> 
                     </li>
                     <li>
-                       <Link className='text-lg font-semibold' to='/login'>Consulting</Link> 
+                       <Link className='text-lg font-semibold' to='/Consulting'>Consulting</Link> 
                     </li>
                     <li>
                         <Link to="../Project" className='text-lg font-semibold'>Projects</Link>
