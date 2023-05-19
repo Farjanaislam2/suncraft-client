@@ -6,13 +6,13 @@ const AboutUs = () => {
         event.preventDefault();
     
         const form=event.target;
-        console.log(form)
        
-        const capasity=form.capasity.value;
-        const file = event.target.homeImage.files[0];
-        const video = event.target.video.value;
+       
+        const about=form.text.value;
+        const file = form.homeImage.files[0];
+    
      
-    const allData={capasity,file}
+    const allData={about}
 
         console.log(allData)
 
@@ -42,14 +42,17 @@ const AboutUs = () => {
             // Check if the image was uploaded successfully
             if (data.status === 200) {
               // You can access the uploaded image URL from the response data
-              console.log("Image URL:", data.data.url);
+              
+              const url = data.data.url;
+              const allDatas= {about, url}
+              console.log(url);
     
-              fetch("http://localhost:5000/addLogo", {
+              fetch("http://localhost:5000/aboutUs", {
                 method: "POST",
                 headers: {
                   "content-type": "application/json",
                 },
-                body: JSON.stringify(data.data),
+                body: JSON.stringify(allDatas),
               })
                 .then((res) => res.json())
                 .then((data) => {
@@ -73,7 +76,7 @@ const AboutUs = () => {
           </label>
           <input
             type="text"
-            name="avalable"
+            name="text"
             placeholder="Type here"
             className="input input-bordered w-96  max-w-xs"
             required

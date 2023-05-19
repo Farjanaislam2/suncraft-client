@@ -13,6 +13,7 @@ import LogImage from "../component/Pages/Dashboard/LogImage";
 import TableForm from "../component/Pages/Dashboard/TableForm";
 import About from "../component/About/About";
 import AboutUs from "../component/Pages/Dashboard/AboutUs";
+import CustomerLogo from "../component/Pages/Dashboard/CustomerLogo";
 
 
 
@@ -70,6 +71,10 @@ export const router =createBrowserRouter([
             {
                 path:'/dashboard/about',
                 element:<AboutUs></AboutUs>
+            },
+            {
+                path:'/dashboard/cutomerLogo',
+                element:<CustomerLogo></CustomerLogo>
             },
         ]
     }

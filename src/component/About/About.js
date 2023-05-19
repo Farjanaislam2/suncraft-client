@@ -43,14 +43,7 @@ function About(props) {
         //     ],
         //   },
         //   {
-        //     id: 4,
-        //     name: 'Image 4',
-        //     imageUrl: 'https://1000logos.net/wp-content/uploads/2021/02/Bharat-Petroleum-logo.png',
-        //     mapAreas: [
-        //       { shape: 'rect', coords: '0,0,300,200', href: '#', alt: 'Area 1' },
-        //       { shape: 'rect', coords: '300,0,600,200', href: '#', alt: 'Area 2' },
-        //     ],
-        //   },
+        //
    
       ];
     

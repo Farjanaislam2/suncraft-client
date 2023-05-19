@@ -7,7 +7,7 @@ const Customer = () => {
 
 
   useEffect(() => {
-    fetch('http://localhost:5000/getLogo')
+    fetch('http://localhost:5000/getCustomerLogo')
       .then(res => res.json())
       .then(data => setlogo(data))
   }, [])
@@ -21,21 +21,9 @@ const Customer = () => {
         {logo.map((customer) => (
           <div key={customer.id}>
             <div className="max-w-full overflow-y-auto">
-              <img src={logo[0]?.image?.url} alt='#' />
+              <img src={customer?.image?.url} alt='#' />
             </div>
-            {/* <div className="max-w-full overflow-y-auto">
-              <map name={`map-${customer.id}`}>
-                {customer.mapAreas.map((area, index) => (
-                  <area
-                    key={index}
-                    shape={area.shape}
-                    coords={area.coords}
-                    href={area.href}
-                    alt={area.alt}
-                  />
-                ))}
-              </map>
-            </div> */}
+            
           </div>
         ))}
       </div>
