@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LogImage = () => {
+const CustomerLogo = () => {
     const handleImageClick = async (event) => {
         event.preventDefault();
         const file = event.target.homeImage.files[0];
@@ -23,11 +23,13 @@ const LogImage = () => {
     
             // Parse the response as JSON
             const data = await response.json();
+    
+            // Check if the image was uploaded successfully
             if (data.status === 200) {
               // You can access the uploaded image URL from the response data
               console.log("Image URL:", data.data.url);
     
-              fetch("http://localhost:5000/addLogo", {
+              fetch("http://localhost:5000/addCustomerLogo", {
                 method: "POST",
                 headers: {
                   "content-type": "application/json",
@@ -45,9 +47,10 @@ const LogImage = () => {
           }
         }
       };
+    
     return (
         <div className="mx-[30px] mt-5 flex flex-col">
-        <p className='text-2xl font-bold mb-3'>Add Logo</p>
+        <p className='text-2xl font-bold mb-3'>Add Customer Logo</p>
         <form onSubmit={handleImageClick}>
         <input type="file"  name="homeImage" className="file-input w-full max-w-xs" />
           
@@ -59,4 +62,4 @@ const LogImage = () => {
     );
 };
 
-export default LogImage;
+export default CustomerLogo;

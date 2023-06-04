@@ -20,7 +20,12 @@ const DashboardLayout = () => {
           <li><Link to='/dashboard'>Add Home Image</Link>
           </li>
           <li><Link to='/dashboard/logoimg'>Add Logo Image</Link></li>
+          <li><Link to='/dashboard/cutomerLogo'>Cutomer Logo</Link></li>
           <li><Link to='/dashboard/tabledata'>Add Table Data</Link></li>
+          <li><Link to='/dashboard/about'>AboutUs</Link></li>
+          <li><Link to='/dashboard/aboutVideo'>Add About Video</Link></li>
+       
+         
         </ul>
       
       </div>
