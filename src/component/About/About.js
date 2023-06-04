@@ -20,17 +20,6 @@ function About(props) {
     console.log(about)
 
 
-//     const videos = [
-//         {
-//             id: 1,
-//             title: 'Video 1',
-//             url: 'https://www.youtube.com/embed/LZ1GnK45-As',
-//             about: 'Starting with a zeal to bring transformative changes in the Renewable Energy space, the company could endeavour to provide Advisory Services, EPC solutions, RESCO solutions. The company ventured into product development being incubated under IIT Kharagpur and delivered Off Grid Inverter, Array Junction Box, IT enabled monitoring system (AMR) etc. It has served more than 50 clients and some of the prominent clients have been "UNDP, Indian Railways, NTPC, RBI, SBI, UBI, ICICI, IOCL, WWF, Godrej, Ambuja etc". The company has started in the year of 2011 from Kolkata and could penetrate into Assam, Orissa, Uttar Pradesh, Uttarkhand, Andhra Pradesh, Jharkhand, Delhi, Maharastra, Madhya Pradesh, Nagaland, Manipur and Arunachal Pradesh" with RE solutions. Our advisory services could extend their reach to Africa where they are doing complete engineering for MWp level Utility scale Solar PV Projects.',
-//             imageUrl: 'https://1000logos.net/wp-content/uploads/2020/10/Aegon-Logo.png',
-// 
-//         },
-// 
-//     ];
 
     return (
         <div >

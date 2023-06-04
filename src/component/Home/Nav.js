@@ -106,7 +106,7 @@ const Nav = () => {
                 user?.uid?
                 <>
                 
-                <ul><Link className='mx-2 text-lg' to ="/dashboard">Dashboard</Link>
+                <ul><Link className='mx-2 text-lg font-semibold' to ="/dashboard">Dashboard</Link>
                 </ul>
                  <button onClick={handleLogout} className='bg-slate-300 px-3 font-medium rounded-md  py-3'>
                  Sign Out
