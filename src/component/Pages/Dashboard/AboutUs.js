@@ -2,30 +2,24 @@ import React from 'react';
 
 const AboutUs = () => {
 
-    const handleSubmit=async(event)=>{
+      const handleSubmit=async(event)=>{
         event.preventDefault();
     
         const form=event.target;
-       
-       
         const about=form.text.value;
-        const file = form.homeImage.files[0];
-    
+        const file = form.Image.files[0];
+       
      
-    const allData={about}
+    const allData={about,file}
 
-        console.log(allData)
-
-
-      
-       
-       
+        console.log(allData)  
     
-        if (file) {
+        if (allData) {
           try {
             // Create a FormData object and append the file to it
             const formData = new FormData();
             formData.append("image", file);
+            formData.append("text", about);
     
             // Upload the image to ImageBB API using fetch
             const response = await fetch(
@@ -38,16 +32,16 @@ const AboutUs = () => {
     
             // Parse the response as JSON
             const data = await response.json();
-    
-            // Check if the image was uploaded successfully
             if (data.status === 200) {
               // You can access the uploaded image URL from the response data
+              console.log("Image URL:", data.data.url);
+
               
               const url = data.data.url;
               const allDatas= {about, url}
-              console.log(url);
+              console.log(allDatas);
     
-              fetch("http://localhost:5000/aboutUs", {
+              fetch("http://localhost:5000/addAbout", {
                 method: "POST",
                 headers: {
                   "content-type": "application/json",
@@ -87,21 +81,14 @@ const AboutUs = () => {
         <label className="label">
             <span className="label-text">Image</span>
           </label>
-        <input type="file"  name="homeImage" className="file-input w-96  max-w-xs " />
+        <input type="file"  name="Image" className="file-input w-96  max-w-xs " />
           
         
       </div>
-      <div className="mx-[35px]  flex flex-col">
-        <label className="label">
-            <span className="label-text">Video</span>
-          </label>
-          <input type="video/mp4" name='video' className='w-[320px] rounded-md p-3' 
-          placeholder="Enter video URL" />
-          
-          <button className="btn m- mt-5 " type="submit">
+   
+      <button className="btn w-[320px] ml-10 mt-5 " type="submit">
             Post
           </button>
-      </div>
         </form>
               
         </div>

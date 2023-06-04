@@ -14,6 +14,8 @@ import TableForm from "../component/Pages/Dashboard/TableForm";
 import About from "../component/About/About";
 import AboutUs from "../component/Pages/Dashboard/AboutUs";
 import CustomerLogo from "../component/Pages/Dashboard/CustomerLogo";
+import Consulting from "../component/Consulting/Consulting";
+import AboutVideoInput from "../component/Pages/Dashboard/AboutVideoInput";
 
 
 
@@ -47,6 +49,10 @@ export const router =createBrowserRouter([
             path:'/customer',
             element:<Customer></Customer>
         },
+        {
+            path:'/consulting',
+            element:<Consulting></Consulting>
+        },
         
       
     ]
@@ -71,6 +77,10 @@ export const router =createBrowserRouter([
             {
                 path:'/dashboard/about',
                 element:<AboutUs></AboutUs>
+            },
+            {
+                path:'/dashboard/aboutVideo',
+                element:<AboutVideoInput></AboutVideoInput>
             },
             {
                 path:'/dashboard/cutomerLogo',
