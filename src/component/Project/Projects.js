@@ -66,7 +66,7 @@ export default function Projects() {
                             <tbody className="divide-y divide-gray-200">
                                     {
                                         projects.map((project,index)=><tr key={index}> <td className="px-12 py-4 text-sm font-medium text-gray-800 whitespace-nowrap ">
-                                        {project.code}
+                                        {index+1}
                                     </td>
                                     <td className="px-12 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                                         {project.location}

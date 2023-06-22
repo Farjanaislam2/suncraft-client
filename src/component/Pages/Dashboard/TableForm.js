@@ -8,7 +8,7 @@ const TableForm = () => {
 
     const form=event.target;
     console.log(form)
-    const code =form.code.value;
+   
     const capasity=form.capasity.value;
     const location=form.location.value;
     const duration=form.duration.value;
@@ -18,7 +18,7 @@ const TableForm = () => {
 
 
     
-const allData={code,capasity,location,duration,status,rate,avalable}
+const allData={capasity,location,duration,status,rate,avalable}
     console.log(allData)
 
 
@@ -42,24 +42,12 @@ const allData={code,capasity,location,duration,status,rate,avalable}
 
   return (
     <div>
-      <h1 className="text-center text-lg font-bold mt-[30px]">
+      <h1 className="text-center text-xl mb-3 font-bold mt-[30px]">
         Add Table Data
       </h1>
       <div className="mx-[150px]  mt-[30px] border border-2 h-[700px] p-2 rounded-md border-gray-600">
         <form onSubmit={handleSubmit}>
-        <div className="  max-w-xs mx-10 ">
-          <label className="label">
-            <span className="label-text">Project Code</span>
-          </label>
-          <input
-            type="text"
-            name="code"
-            placeholder="Type here"
-            className="input input-bordered w-96  max-w-xs"
-            required
-          />
-        </div>
-
+        
         <div className="  max-w-xs mx-10 ">
           <label className="label">
             <span className="label-text">Project Location</span>

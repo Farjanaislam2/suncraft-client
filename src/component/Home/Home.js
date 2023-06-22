@@ -40,7 +40,7 @@ const Home = () => {
           <div>
             <div className='flex '>
               <img className='object-cover h-80 w-full' src={img[1]?.image?.url} alt="#" />
-              <div className="dropdown dropdown-left">
+              <div className="dropdown dropdown-left ">
                 <button onClick={HiDotsVertical}>
                   <HiDotsVertical />
                 </button>

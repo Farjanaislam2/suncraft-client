@@ -66,6 +66,9 @@ const Slider = () => {
                 <div className="col-1 w-1/2 contain flex ">
                   <img className="w-auto pt-7 pb-8 bg-white p-2" src={logo.image} alt="" />
                  
+                <div className="col-1 w-1/2 contain ">
+                  <img className="w-auto pt-7 pb-8 bg-white p-2" src={logo.image.url} alt="" />
+
 
                   <div className='overlay '>
                   <div className="dropdown dropdown-end">
@@ -82,7 +85,7 @@ const Slider = () => {
                 </div>
               </SwiperSlide>)}
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
          
           <div className="col-1 w-1/2 contain">
           <img className="w-auto pt-8 pb-8 bg-white p-2" src={solar2} alt="" />
@@ -289,7 +292,7 @@ const Slider = () => {
             <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded '>Know Our Customer</button></Link>
     </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
           </Swiper>
         </div>
       </div>
