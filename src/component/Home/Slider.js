@@ -250,7 +250,7 @@ const Slider = () => {
               </div>
             <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
     </div>
-          </div>
+          </div>  
         </SwiperSlide>
         <SwiperSlide>
          
@@ -260,7 +260,7 @@ const Slider = () => {
             <div className='overlay'>
             <div className="dropdown dropdown-end">
                 <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
+                  <HiDotsVertical/>
                 </button>
                 <ul tabIndex={10} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><a>Delete</a></li>
