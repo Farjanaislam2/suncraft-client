@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Slider from './Slider';
 import { HiDotsVertical } from "react-icons/hi";
+import { Link } from 'react-router-dom';
+
 
 
 const Home = () => {
@@ -19,7 +21,7 @@ const Home = () => {
     // Banner
     <div className='container  my-5 relative'>
       <div style={{ position: 'relative' }}>
-        <button style={{ position: 'absolute', top: '46%', left: '44%' }} className="btn bg-blue-600 normal-case rounded-3xl">Start your Journey</button>
+       <Link to ='journey'> <button style={{ position: 'absolute', top: '46%', left: '44%' }} className="btn btn-primary rounded-3xl">Start your Journey</button></Link>
         <div className=' grid grid-cols-1 md:grid-cols-2 px-1 py-1' >
           <div>
             <div className='flex '>

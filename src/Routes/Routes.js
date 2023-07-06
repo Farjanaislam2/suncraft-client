@@ -17,6 +17,7 @@ import CustomerLogo from "../component/Pages/Dashboard/CustomerLogo";
 import Consulting from "../component/Consulting/Consulting";
 import AboutVideoInput from "../component/Pages/Dashboard/AboutVideoInput";
 import ConsultingForm from "../component/Pages/Dashboard/ConsultingForm";
+import Journey from "../component/Home/Journey";
 
 
 
@@ -53,6 +54,10 @@ export const router =createBrowserRouter([
         {
             path:'/consulting',
             element:<Consulting></Consulting>
+        },
+        {
+            path:'/journey',
+            element:<Journey></Journey>
         },
         
       
