@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const videoData = [
   {
     id: 1,
-    src: 'https://www.youtube.com/watch?v=m2htQJuFrnY',
+    url: 'https://www.youtube.com/watch?v=lq6a9GKrtck',
     title: 'Video 1',
   }
 
@@ -14,9 +14,9 @@ function Journey() {
   return (
     <div className=' py-10 flex justify-center items-center'>
       {videoData.map((video) => (
-        <Link to={`/video/${video.id}`} key={video.id}>
+        <Link to='/form'>
           <div>
-            <video src={video.src} controls={true} autoPlay={false} />
+            <video url={video.url} controls={true} autoPlay={false} />
             <h3>{video.title}</h3>
           </div>
         </Link>
