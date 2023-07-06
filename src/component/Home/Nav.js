@@ -13,16 +13,7 @@ const Nav = () => {
         .catch(err => console.log(err));
     }
 
-    const menuItems = <>
-        <li>
-            <a>Home</a>
-        </li>
-        <li>
-            <a>Buy Project From Us</a>
-        </li>
-
-
-    </>
+ 
     return (
         <div
          className="navbar bg-gray-100 px-8">
@@ -67,46 +58,56 @@ const Nav = () => {
                 </div>
                <Link to='/'> <img className='w-[190px]' src={img} alt="#"/></Link>
             </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 py-1">
+         <div className='hidden lg:flex flex-col'>
+         <div className="navbar-center hidden lg:flex">
+                <ul className="menu menu-horizontal px-1 gap-8">
                     <li>
-                        <Link className='text-lg font-semibold' to="/">Home</Link>
+                        <Link className=' font-semibold' to="/">Home</Link>
                        
                     </li>
                     <li>
-                    <Link className='text-lg font-semibold' to='/About'>About Us</Link> 
+                    <Link className=' font-semibold' to='/About'>About Us</Link> 
                     </li>
                     <li>
-                       <Link className='text-lg font-semibold' to='/Consulting'>Consulting</Link> 
+                       <Link className=' font-semibold' to='/Consulting'>Consulting</Link> 
                     </li>
                     <li>
-                        <Link to="../Project" className='text-lg font-semibold'>Projects</Link>
+                        <Link to="../Project" className=' font-semibold'>Projects</Link>
                     </li>
                     <li>
-                        <a className='text-lg font-semibold'>Products</a>
+                        <a className=' font-semibold'>Products</a>
+                    </li>
+            
+                </ul>
+                
+            </div>
+            <div className="navbar-center hidden lg:flex">
+                <ul className="menu menu-horizontal  gap-8">
+                  
+                    <li>
+                        <a className='  font-semibold'>Productive Load Applications</a>
                     </li>
                     <li>
-                        <a className='text-lg w-[180px] font-semibold'>Productive Load Applications</a>
-                    </li>
-                    <li>
-                        <a className='text-lg w-[120px] font-semibold'>Investment Opportunities</a>
+                        <a className=' font-semibold'>Investment Opportunities</a>
                     </li>
                     
                     <li>
-                        <a className='text-lg font-semibold'>Work With Us</a>
+                        <a className=' font-semibold'>Work With Us</a>
                     </li>
                   
                  
                     
                 </ul>
+                
             </div>
+         </div>
             
             <div className="navbar-end">
                {
                 user?.uid?
                 <>
                 
-                <ul><Link className='mx-2 text-lg font-semibold' to ="/dashboard">Dashboard</Link>
+                <ul><Link className='mx-6  font-semibold' to ="/dashboard">Dashboard</Link>
                 </ul>
                  <button onClick={handleLogout} className='bg-slate-300 px-3 font-medium rounded-md  py-3'>
                  Sign Out
