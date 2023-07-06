@@ -10,7 +10,7 @@ const Consulting = () => {
 
 
   useEffect(() => {
-    fetch('http://localhost:5000/getConsulting')
+    fetch('https://suncraft-server-avh2.vercel.app/getConsulting')
       .then(res => res.json())
       .then(data => setConsult(data))
   }, [])

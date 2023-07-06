@@ -41,7 +41,7 @@ const AboutUs = () => {
               const allDatas= {about, url}
               console.log(allDatas);
     
-              fetch("http://localhost:5000/addAbout", {
+              fetch("https://suncraft-server-avh2.vercel.app/addAbout", {
                 method: "POST",
                 headers: {
                   "content-type": "application/json",

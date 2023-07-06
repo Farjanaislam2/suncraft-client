@@ -27,7 +27,7 @@ const LogImage = () => {
               // You can access the uploaded image URL from the response data
               console.log("Image URL:", data.data.url);
     
-              fetch("http://localhost:5000/addLogo", {
+              fetch("https://suncraft-server-avh2.vercel.app/addLogo", {
                 method: "POST",
                 headers: {
                   "content-type": "application/json",

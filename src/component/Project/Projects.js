@@ -5,7 +5,7 @@ export default function Projects() {
     const [projects,setProjects]=useState([])
     useEffect(()=>{
        
-            fetch('http://localhost:5000/getTableData')
+            fetch('https://suncraft-server-avh2.vercel.app/getTableData')
             .then(res => res.json())
             .then(data=>setProjects(data ))
                 } ,[])

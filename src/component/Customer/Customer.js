@@ -7,7 +7,7 @@ const Customer = () => {
 
 
   useEffect(() => {
-    fetch('http://localhost:5000/getCustomerLogo')
+    fetch('https://suncraft-server-avh2.vercel.app/getCustomerLogo')
       .then(res => res.json())
       .then(data => setlogo(data))
   }, [])

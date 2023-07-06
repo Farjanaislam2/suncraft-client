@@ -32,7 +32,7 @@ const Slider = () => {
   ]
 
   useEffect(() => {
-    fetch('http://localhost:5000/getLogo')
+    fetch('https://suncraft-server-avh2.vercel.app/getLogo')
       .then(res => res.json())
       .then(data => setLogo(data))
   }, [])

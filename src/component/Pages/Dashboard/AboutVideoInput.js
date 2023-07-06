@@ -18,7 +18,7 @@ const handleFileChange = (e) => {
         formdata.append('video', video);
 
         try{
-            const response=await axios.post("http://localhost:5000/addAboutData", formdata, {
+            const response=await axios.post("https://suncraft-server-avh2.vercel.app/addAboutData", formdata, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             })
             console.log(response.data);

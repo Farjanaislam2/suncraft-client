@@ -40,7 +40,7 @@ const ConsultingForm = () => {
               const allDatas= {consult, url}
               console.log(allDatas);
     
-              fetch("http://localhost:5000/consulting", {
+              fetch("https://suncraft-server-avh2.vercel.app/consulting", {
                 method: "POST",
                 headers: {
                   "content-type": "application/json",

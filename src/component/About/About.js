@@ -12,7 +12,7 @@ function About(props) {
 
 
     useEffect(() => {
-      fetch('http://localhost:5000/getAbout')
+      fetch('https://suncraft-server-avh2.vercel.app/getAbout')
         .then(res => res.json())
         .then(data => setAbout(data))
     }, [])

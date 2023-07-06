@@ -8,10 +8,8 @@ const Home = () => {
   const [img, setImg] = useState([])
 
 
-
-
   useEffect(() => {
-    fetch('http://localhost:5000/getImage')
+    fetch('https://suncraft-server-avh2.vercel.app/getImage')
       .then(res => res.json())
       .then(data => setImg(data))
   }, [])

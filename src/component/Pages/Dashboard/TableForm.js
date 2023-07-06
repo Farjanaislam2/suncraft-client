@@ -22,7 +22,7 @@ const allData={capasity,location,duration,status,rate,avalable}
     console.log(allData)
 
 
-    fetch("http://localhost:5000/addTableData", {
+    fetch("https://suncraft-server-avh2.vercel.app/addTableData", {
                 method: "POST",
                 headers: {
                   "content-type": "application/json",

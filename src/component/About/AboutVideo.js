@@ -13,7 +13,7 @@ const AboutVideo = () => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.get('http://localhost:5000/getAboutData');
+            const response = await axios.get('https://suncraft-server-avh2.vercel.app/getAboutData');
             setMedia(response.data);
             setLoading(false);
           } catch (error) {
