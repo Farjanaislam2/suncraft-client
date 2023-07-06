@@ -18,6 +18,9 @@ import Consulting from "../component/Consulting/Consulting";
 import AboutVideoInput from "../component/Pages/Dashboard/AboutVideoInput";
 import ConsultingForm from "../component/Pages/Dashboard/ConsultingForm";
 import Journey from "../component/Home/Journey";
+import Form from "../component/Home/Form";
+import HomeVideoPost from "../component/Pages/Dashboard/HomeVideoPost";
+
 
 
 
@@ -59,6 +62,14 @@ export const router =createBrowserRouter([
             path:'/journey',
             element:<Journey></Journey>
         },
+       
+        {
+            path:'/form',
+            element:<Form></Form>
+        },
+       
+    
+       
         
       
     ]
@@ -71,6 +82,10 @@ export const router =createBrowserRouter([
             {
                 path:'/dashboard',
                 element:<HomeImage></HomeImage>
+            },
+            {
+                path:'/dashboard/homeVideo',
+                element:<HomeVideoPost></HomeVideoPost>
             },
             {
                 path:'/dashboard/logoimg',
