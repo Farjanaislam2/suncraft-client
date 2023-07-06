@@ -65,237 +65,239 @@ const Slider = () => {
 
                 <div className="col-1 w-1/2 contain flex ">
                   <img className="w-auto pt-7 pb-8 bg-white p-2" src={logo.image} alt="" />
-                 
-                <div className="col-1 w-1/2 contain ">
-                  <img className="w-auto pt-7 pb-8 bg-white p-2" src={logo.image.url} alt="" />
+
+                  <div className="col-1 w-1/2 contain ">
+                    <img className="w-auto pt-7 pb-8 bg-white p-2" src={logo.image.url} alt="" />
 
 
-                  <div className='overlay '>
-                  <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
-              </div>
-                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                    <div className='overlay '>
+                      <div className="dropdown dropdown-end">
+                        <button onClick={HiDotsVertical}>
+                          <HiDotsVertical />
+                        </button>
+                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a>Delete</a></li>
+                          <li><a>Edit</a></li>
+                        </ul>
+                      </div>
+                      <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>)}
 
-            {/* <SwiperSlide>
-         
-          <div className="col-1 w-1/2 contain">
-          <img className="w-auto pt-8 pb-8 bg-white p-2" src={solar2} alt="" />
-       
-          <div className='overlay'>
-          <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={1} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            <SwiperSlide>
+
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto pt-8 pb-8 bg-white p-2" src={solar2} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={1} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                </div>
               </div>
-          <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
-    </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-         
-          <div className="col-1 w-1/2 contain">
-          <img className="w-auto bg-white p-2 pt-10 pb-10" src={solar3} alt="" />
-         
-          <div className='overlay'>
-          <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={2} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            </SwiperSlide>
+            <SwiperSlide>
+
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto bg-white p-2 pt-10 pb-10" src={solar3} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={2} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                </div>
               </div>
-          <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
-    </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="col-1 w-1/2 contain">
-          <img className="w-auto bg-white p-2" src={solar4} alt="" />
-        
-          <div className='overlay'>
-          <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={3} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto bg-white p-2" src={solar4} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={3} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                </div>
               </div>
-          <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
-    </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-         
-        <div className="col-1 w-1/2 contain">
-            <img className="w-auto bg-white p-2 pt-3 pb-3" src={solar1} alt="" />
-       
-            <div className='overlay'>
-            <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={4} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            </SwiperSlide>
+            <SwiperSlide>
+
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto bg-white p-2 pt-3 pb-3" src={solar1} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={4} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                </div>
               </div>
-            <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
-    </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-         
-        <div className="col-1 w-1/2 contain">
-            <img className="w-auto  pb-10" src={solar2} alt="" /> 
-            
-            <div className='overlay'>
-            <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={5} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            </SwiperSlide>
+            <SwiperSlide>
+
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto  pb-10" src={solar2} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={5} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                </div>
               </div>
-            <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
-    </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-         
-          <div className="col-1 w-1/2 contain">
-            <img className="w-auto pt-7 pb-8 bg-white p-2" src={solar3} alt="" />
-         
-            <div className='overlay'>
-            <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={6} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            </SwiperSlide>
+            <SwiperSlide>
+
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto pt-7 pb-8 bg-white p-2" src={solar3} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={6} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                </div>
               </div>
-            <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
-    </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-         
-          <div className="col-1 w-1/2 contain">
-            <img className="w-auto pt-8 pb-8 bg-white p-2" src={solar4} alt="" />
-         
-            <div className='overlay'>
-            <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={7} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            </SwiperSlide>
+            <SwiperSlide>
+
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto pt-8 pb-8 bg-white p-2" src={solar4} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={7} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                </div>
               </div>
-            <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
-    </div>
-          </div>
-          </SwiperSlide>
-        <SwiperSlide>
-         
-          <div className="col-1 w-1/2 contain">
-            <img className="w-auto bg-white p-2 pt-10 pb-10" src={solar1} alt="" />
-         
-            <div className='overlay'>
-            <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={8} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            </SwiperSlide>
+            <SwiperSlide>
+
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto bg-white p-2 pt-10 pb-10" src={solar1} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={8} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                </div>
               </div>
-            <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
-    </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-         
-          <div className="col-1 w-1/2 contain">
-            <img className="w-auto bg-white p-2" src={solar2} alt="" />
-          
-            <div className='overlay'>
-            <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={9} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            </SwiperSlide>
+            <SwiperSlide>
+
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto bg-white p-2" src={solar2} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={9} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                </div>
               </div>
-            <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
-    </div>
-          </div>  
-        </SwiperSlide>
-        <SwiperSlide>
-         
-          <div className="col-1 w-1/2 contain">
-            <img className="w-auto bg-white p-2 pt-3 pb-3" src={solar3} alt="" /> 
-          
-            <div className='overlay'>
-            <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical/>
-                </button>
-                <ul tabIndex={10} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            </SwiperSlide>
+            <SwiperSlide>
+
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto bg-white p-2 pt-3 pb-3" src={solar3} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={10} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
+                </div>
               </div>
-            <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded'>Know Our Customer</button></Link>
-    </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-         
-          <div className="col-1 w-1/2 contain">
-            <img className="w-auto  pb-10" src={solar4} alt="" />
-          
-            <div className='overlay'>
-            <div className="dropdown dropdown-end">
-                <button onClick={HiDotsVertical}>
-                  <HiDotsVertical />
-                </button>
-                <ul tabIndex={11} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Delete</a></li>
-                  <li><a>Edit</a></li>
-                </ul>
+            </SwiperSlide>
+            <SwiperSlide>
+
+              <div className="col-1 w-1/2 contain">
+                <img className="w-auto  pb-10" src={solar4} alt="" />
+
+                <div className='overlay'>
+                  <div className="dropdown dropdown-end">
+                    <button onClick={HiDotsVertical}>
+                      <HiDotsVertical />
+                    </button>
+                    <ul tabIndex={11} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Delete</a></li>
+                      <li><a>Edit</a></li>
+                    </ul>
+                  </div>
+                  <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded '>Know Our Customer</button></Link>
+                </div>
               </div>
-            <Link to='/customer'>  <button className='custom bg-blue-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded '>Know Our Customer</button></Link>
-    </div>
-          </div>
-        </SwiperSlide> */}
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
+
 
     </div>
   );
