@@ -57,7 +57,7 @@ allow="autoplay; encrypted-media"
 allowfullscreen
 ></iframe>
 
-{/* Render additional media data as needed */}
+{/* Render additional media data aas needed */}
 </div>
 </Link>
 ))}
