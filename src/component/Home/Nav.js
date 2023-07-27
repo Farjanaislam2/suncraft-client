@@ -92,7 +92,7 @@ const Nav = () => {
                     </li>
                     
                     <li>
-                        <a className=' font-semibold'>Work With Us</a>
+                        <Link to='/work with us' className=' font-semibold'>Work With Us</Link> 
                     </li>
                   
                  
