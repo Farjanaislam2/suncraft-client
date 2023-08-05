@@ -77,7 +77,9 @@ const Nav = () => {
                     <li>
                         <a className=' font-semibold'>Products</a>
                     </li>
-            
+                    <li>
+                        <Link to='/do project with us' className='  font-semibold'>Do Project With Us</Link>
+                    </li>
                 </ul>
                 
             </div>
@@ -85,7 +87,7 @@ const Nav = () => {
                 <ul className="menu menu-horizontal  gap-8">
                   
                     <li>
-                        <a className='  font-semibold'>Productive Load Applications</a>
+                        <Link to='/buy project' className='font-semibold'>Buy Project From Us</Link>
                     </li>
                     <li>
                         <a className=' font-semibold'>Investment Opportunities</a>
@@ -95,7 +97,9 @@ const Nav = () => {
                         <Link to='/work with us' className=' font-semibold'>Work With Us</Link> 
                     </li>
                   
-                 
+                    <li>
+                        <Link to='/contact' className=' font-semibold'>Contact</Link> 
+                    </li>
                     
                 </ul>
                 
