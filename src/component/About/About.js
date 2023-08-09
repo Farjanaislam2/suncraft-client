@@ -3,6 +3,7 @@ import { FaTimes } from 'react-icons/fa';
 // import intro from '../../Video/Intro1.mp4';
 import VideoList from '../../Video/Intro1.mp4';
 import AboutVideo from "./AboutVideo";
+import ManagementTeam from "./ManagementTeam";
 
 function About(props) {
 
@@ -45,6 +46,22 @@ function About(props) {
                 </div>
 
 
+                <div className="mt-10">
+    <h1 className="text-[30px] mb-5 align-middle">Who We Are</h1>
+    <p>Scholar Lab Foundation is a “Not for Profit” Organisation formed by a group of IITians to work as an extended arm of premier Institutions to facilitate productive research and bridge the gap between Institutional framework and the Industrial requirement. The idea is to develop the products for the market with a focus on value for customers, betterment of the society and overall growth of the company to pave the way for self-reliance/ Attmanirbhar Bharat under Make in India Initiative. The group has 200+ Years of cumulative experience in renewable energy, IT, water management, healthcare and analytics, oil and gas and rural development as business leaders and entrepreneurs. We focus on Science & Engineering, Management & Humanities, and Social Science & Finance as our area of work. Our associate companies are working with UN, WWF, INSA, Indian Railways and IITs / premier Indian Universities and R&D Labs. We have a pool of experts of IIT Alumni from India and abroad from industrial research to academic research catering various sectors.</p>
+</div>
+
+<div className="mt-10">
+    <h1 className="text-[30px] mb-5 align-middle">Our Mission</h1>
+    <p>Enable technological innovation through product and process development and support the Industrial Ecosystem to build new standard of excellence and self-reliance in Nation’s Industrial growth Engine.</p>
+</div>
+<div className="mt-10">
+    <h1 className="text-[30px] mb-5 align-middle">Our Vision</h1>
+    <p>
+Become the benchmark product and process Development Company providing best in class deliverables to satisfied stakeholders through continuous innovations and improvement driven by the integrity, teamwork and creativity of our people.</p>
+</div>
+<h1 className="text-center text-[40px] bg-lime-400 mt-[100px] rounded p-1">Our Leadership</h1>
+<ManagementTeam></ManagementTeam>
 
             </div>
 

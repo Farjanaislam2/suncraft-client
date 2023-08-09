@@ -19,8 +19,6 @@ import AboutVideoInput from "../component/Pages/Dashboard/AboutVideoInput";
 import ConsultingForm from "../component/Pages/Dashboard/ConsultingForm";
 import Journey from "../component/Home/Journey";
 import HomeVideoPost from "../component/Pages/Dashboard/HomeVideoPost";
-import BuyProject from "../component/Do&BuyProject/BuyProject";
-import DoProject from "../component/Do&BuyProject/DoProject";
 import ContactUs from "../component/Do&BuyProject/ContactUs";
 
 
@@ -64,15 +62,6 @@ export const router =createBrowserRouter([
             path:'/journey',
             element:<Journey></Journey>
         },
-        {
-            path:'/buy project' ,
-            element:<BuyProject></BuyProject>
-        },  
-        {
-            path:'/do project with us' ,
-            element:<DoProject></DoProject>
-        }, 
-       
         {
             path:'/contact' ,
             element:<ContactUs></ContactUs>
