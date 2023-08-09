@@ -58,7 +58,7 @@ const teams=[
       {
         teams.map(team =>
           <div key={team.id} className="card w-96 bg-gray-200 shadow-xl">
-  <figure className="px-10 pt-10">
+  <figure className="px-8 pt-10">
     <img src={team.img} alt="Shoes" className="rounded-xl" />
   </figure>
   <div className="card-body items-center text-center">
