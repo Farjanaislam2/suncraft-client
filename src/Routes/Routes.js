@@ -20,6 +20,7 @@ import ConsultingForm from "../component/Pages/Dashboard/ConsultingForm";
 import Journey from "../component/Home/Journey";
 import HomeVideoPost from "../component/Pages/Dashboard/HomeVideoPost";
 import ContactUs from "../component/Do&BuyProject/ContactUs";
+import Contacts from "../component/Contact/Contacts";
 
 
 
@@ -65,6 +66,11 @@ export const router =createBrowserRouter([
         {
             path:'/contact' ,
             element:<ContactUs></ContactUs>
+        }, 
+      
+        {
+            path:'/contacts' ,
+            element:<Contacts></Contacts>
         }, 
       
     ]
