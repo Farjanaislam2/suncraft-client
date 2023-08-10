@@ -4,6 +4,8 @@ import { FaTimes } from 'react-icons/fa';
 import VideoList from '../../Video/Intro1.mp4';
 import AboutVideo from "./AboutVideo";
 import ManagementTeam from "./ManagementTeam";
+import { Link } from "react-router-dom";
+
 
 function About(props) {
 
@@ -62,7 +64,7 @@ Become the benchmark product and process Development Company providing best in c
 </div>
 <h1 className="text-center text-[40px] bg-lime-400 mt-[100px] rounded p-1">Our Leadership</h1>
 <ManagementTeam></ManagementTeam>
-
+<h1 className="mt-10 font-semibold text-2xl	"> <Link to='/contacts'>Contact</Link></h1>
             </div>
 
 
