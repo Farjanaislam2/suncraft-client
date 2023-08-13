@@ -19,8 +19,8 @@ import AboutVideoInput from "../component/Pages/Dashboard/AboutVideoInput";
 import ConsultingForm from "../component/Pages/Dashboard/ConsultingForm";
 import Journey from "../component/Home/Journey";
 import HomeVideoPost from "../component/Pages/Dashboard/HomeVideoPost";
-
 import Contacts from "../component/Contact/Contacts";
+import Privacy from "../component/About/Privacy";
 
 
 
@@ -68,6 +68,10 @@ export const router =createBrowserRouter([
         {
             path:'/contacts' ,
             element:<Contacts></Contacts>
+        }, 
+        {
+            path:'/privacy' ,
+            element:<Privacy></Privacy>
         }, 
       
     ]

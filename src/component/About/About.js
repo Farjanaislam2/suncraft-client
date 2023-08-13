@@ -65,7 +65,7 @@ Become the benchmark product and process Development Company providing best in c
 <ManagementTeam></ManagementTeam>
 <div className="flex justify-between mb-5">
 <h1 className="mt-10 font-semibold text-xl p-4 rounded-lg text-green-600 bg-gray-300"> <Link to='/contacts'>Contact</Link></h1>
-<h1 className="mt-10 p-4 rounded-lg font-semibold text-xl	text-green-600 bg-gray-300"> <Link to='/contacts'>Our Privacy Policy</Link></h1>
+<h1 className="mt-10 p-4 rounded-lg font-semibold text-xl	text-green-600 bg-gray-300"> <Link to='/privacy'>Our Privacy Policy</Link></h1>
 </div>
             </div>
 
