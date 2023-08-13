@@ -94,10 +94,7 @@ const Nav = () => {
                     <li>
                         <Link to='/work with us' className=' font-semibold'>Work With Us</Link> 
                     </li>
-                  
-                    <li>
-                        <Link to='/contact' className=' font-semibold'>Contact</Link> 
-                    </li>
+                
                     
                 </ul>
                 

@@ -63,7 +63,10 @@ Become the benchmark product and process Development Company providing best in c
 </div>
 <h1 className="text-center text-[40px] bg-lime-400 mt-[100px] rounded p-1">Our Leadership</h1>
 <ManagementTeam></ManagementTeam>
-
+<div className="flex justify-between mb-5">
+<h1 className="mt-10 font-semibold text-xl p-4 rounded-lg text-green-600 bg-gray-300"> <Link to='/contacts'>Contact</Link></h1>
+<h1 className="mt-10 p-4 rounded-lg font-semibold text-xl	text-green-600 bg-gray-300"> <Link to='/contacts'>Our Privacy Policy</Link></h1>
+</div>
             </div>
 
 
