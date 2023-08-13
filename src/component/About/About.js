@@ -4,6 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 import VideoList from '../../Video/Intro1.mp4';
 import AboutVideo from "./AboutVideo";
 import ManagementTeam from "./ManagementTeam";
+import { Link } from "react-router-dom";
 
 function About(props) {
 
