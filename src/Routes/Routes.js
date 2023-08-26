@@ -21,6 +21,8 @@ import Journey from "../component/Home/Journey";
 import HomeVideoPost from "../component/Pages/Dashboard/HomeVideoPost";
 import Contacts from "../component/Contact/Contacts";
 import Privacy from "../component/About/Privacy";
+import Capex from "../component/Project/Capex";
+import Resco from "../component/Project/Resco";
 
 
 
@@ -73,7 +75,14 @@ export const router =createBrowserRouter([
             path:'/privacy' ,
             element:<Privacy></Privacy>
         }, 
-      
+        {
+            path:'/capex' ,
+            element:<Capex></Capex>
+        }, 
+        {
+            path:'/resco' ,
+            element:<Resco></Resco>
+        },
     ]
     },
     {
