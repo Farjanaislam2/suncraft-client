@@ -7,7 +7,6 @@ import Projects from "../component/Project/Projects";
 import PrivateRoute from "./PrivateRoute";
 import DashboardLayout from "../Layout/DashboardLayout";
 import HomeImage from "../component/Pages/Dashboard/HomeImage";
-import Dashboard from "../component/Pages/Dashboard/Dashboard"
 import Customer from "../component/Customer/Customer";
 import LogImage from "../component/Pages/Dashboard/LogImage";
 import TableForm from "../component/Pages/Dashboard/TableForm";
@@ -23,6 +22,8 @@ import Contacts from "../component/Contact/Contacts";
 import Privacy from "../component/About/Privacy";
 import Capex from "../component/Project/Capex";
 import Resco from "../component/Project/Resco";
+import Users from "../component/Pages/Dashboard/Users";
+import AdminRoute from "./AdminRoute/AdminRoute";
 
 
 
@@ -87,40 +88,44 @@ export const router =createBrowserRouter([
     },
     {
         path:'/dashboard',
-        element:<PrivateRoute><DashboardLayout></DashboardLayout>
-        </PrivateRoute>,
+        element:<AdminRoute><DashboardLayout></DashboardLayout>
+        </AdminRoute>,
         children:[
             {
                 path:'/dashboard',
-                element:<HomeImage></HomeImage>
+                element:<AdminRoute><HomeImage></HomeImage></AdminRoute>
             },
             {
                 path:'/dashboard/homeVideo',
-                element:<HomeVideoPost></HomeVideoPost>
+                element:<AdminRoute><HomeVideoPost></HomeVideoPost></AdminRoute>
             },
             {
                 path:'/dashboard/logoimg',
-                element:<LogImage></LogImage>
+                element:<AdminRoute><LogImage></LogImage></AdminRoute>
             },
             {
                 path:'/dashboard/tabledata',
-                element:<TableForm></TableForm>
+                element:<AdminRoute><TableForm></TableForm></AdminRoute>
             },
             {
                 path:'/dashboard/about',
-                element:<AboutUs></AboutUs>
+                element:<AdminRoute><AboutUs></AboutUs></AdminRoute>
             },
             {
                 path:'/dashboard/aboutVideo',
-                element:<AboutVideoInput></AboutVideoInput>
+                element:<AdminRoute><AboutVideoInput></AboutVideoInput> </AdminRoute>
             },
             {
                 path:'/dashboard/cutomerLogo',
-                element:<CustomerLogo></CustomerLogo>
+                element:<AdminRoute><CustomerLogo></CustomerLogo></AdminRoute>
             },
             {
                 path:'/dashboard/consulting',
-                element:<ConsultingForm></ConsultingForm>
+                element:<AdminRoute><ConsultingForm></ConsultingForm> </AdminRoute>
+            },
+            {
+                path:'/dashboard/users',
+                element:<AdminRoute><Users></Users></AdminRoute>
             },
         ]
     }

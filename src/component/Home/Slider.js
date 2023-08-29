@@ -38,7 +38,7 @@ const Slider = () => {
       .then(data => setLogo(data))
   }, [])
 
-  console.log(logo[0]?.image?.url)
+  // console.log(logo[0]?.image?.url)
   return (
     <div>
       <div>

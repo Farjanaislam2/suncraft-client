@@ -53,7 +53,7 @@ function Journey() {
                 frameborder="0"
                autoPlay
                controls
-                allowfullscreen
+               allowFullScreen
               ></video>
             )}
 

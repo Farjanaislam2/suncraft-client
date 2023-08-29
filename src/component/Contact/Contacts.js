@@ -37,7 +37,7 @@ export default function Contacts() {
     <div className="grid h-100 flex-grow   ">
     <h1 className='font-semibold px-28 py-3 text-xl text-center	text-lime-600		mb-8'>Our Office Location</h1>
     <div className="lg:w-[850px]">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.517844234804!2d88.38654961103734!3d22.522266379442225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02715680946915%3A0xd291e3d4a54b5956!2sSuncraft%20Energy!5e0!3m2!1sen!2sbd!4v1684088562568!5m2!1sen!2sbd" width="100%" height="350" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.517844234804!2d88.38654961103734!3d22.522266379442225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02715680946915%3A0xd291e3d4a54b5956!2sSuncraft%20Energy!5e0!3m2!1sen!2sbd!4v1684088562568!5m2!1sen!2sbd" width="100%" height="350" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer"></iframe>
       
     </div>
     <div className='container px-40 py-5'>

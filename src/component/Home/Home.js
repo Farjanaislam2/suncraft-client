@@ -16,7 +16,7 @@ const Home = () => {
       .then(data => setImg(data))
   }, [])
 
-  console.log(img[0]?.image?.url)
+  // console.log(img[0]?.image?.url)
   return (
     // Banner
     <div className='container  my-5 relative'>
