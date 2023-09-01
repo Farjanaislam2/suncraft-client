@@ -3,16 +3,22 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../context/AuthProvider";
+import useToken from "../../../hooks/useToken";
 
 const Login = () => {
   const { register,formState: { errors }, handleSubmit } = useForm();
   const {signIn} =useContext(AuthContext)
   const [loginError, setLoginError]= useState('');
+  const[loginUserEmail, setLoginUserEmail]=useState('')
+  const[token]=useToken(loginUserEmail);
   const location=useLocation();
   const navigate=useNavigate();
 
   const from=location.state?.from?.pathname || '/';
 
+  if(token){
+    navigate(from, {replace:true});
+  }
 
 const handleLogin =data =>{
   console.log(data)
@@ -23,7 +29,7 @@ const handleLogin =data =>{
   .then(result =>{
     const user =result.user;
     console.log(user);
-    navigate(from, {replace:true});
+    setLoginUserEmail(data.email);
   })
   .catch(error=>{
     console.log(error.message)
@@ -56,15 +62,15 @@ const handleLogin =data =>{
           </div>
           <div className="form-control w-full max-w-xs">
             <label className="label">
-              <span className="label-text font-medium">Mobile No</span>
+              <span className="label-text font-medium">Password</span>
             </label>
             <input
               type="password"
-              {...register("password", {required:"Mobile No is required"})}
+              {...register("password", {required:"Password is required"})}
               className="input input-bordered w-full max-w-xs"
               placeholder="Enter Your Email Address"
             />
-               {errors.password?.type === 'required' && <p className='text-red-500' role="alert">mobile no is required</p>}
+               {errors.password?.type === 'required' && <p className='text-red-500' role="alert">Password is required</p>}
           </div>
           
           

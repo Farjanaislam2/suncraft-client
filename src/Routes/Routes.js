@@ -7,7 +7,6 @@ import Projects from "../component/Project/Projects";
 import PrivateRoute from "./PrivateRoute";
 import DashboardLayout from "../Layout/DashboardLayout";
 import HomeImage from "../component/Pages/Dashboard/HomeImage";
-import Dashboard from "../component/Pages/Dashboard/Dashboard"
 import Customer from "../component/Customer/Customer";
 import LogImage from "../component/Pages/Dashboard/LogImage";
 import TableForm from "../component/Pages/Dashboard/TableForm";
@@ -18,8 +17,13 @@ import Consulting from "../component/Consulting/Consulting";
 import AboutVideoInput from "../component/Pages/Dashboard/AboutVideoInput";
 import ConsultingForm from "../component/Pages/Dashboard/ConsultingForm";
 import Journey from "../component/Home/Journey";
-import Form from "../component/Home/Form";
 import HomeVideoPost from "../component/Pages/Dashboard/HomeVideoPost";
+import Contacts from "../component/Contact/Contacts";
+import Privacy from "../component/About/Privacy";
+import Capex from "../component/Project/Capex";
+import Resco from "../component/Project/Resco";
+import Users from "../component/Pages/Dashboard/Users";
+
 
 
 
@@ -63,21 +67,29 @@ export const router =createBrowserRouter([
             element:<Journey></Journey>
         },
        
-        {
-            path:'/form',
-            element:<Form></Form>
-        },
-       
-    
-       
-        
       
+        {
+            path:'/contacts' ,
+            element:<Contacts></Contacts>
+        }, 
+        {
+            path:'/privacy' ,
+            element:<Privacy></Privacy>
+        }, 
+        {
+            path:'/capex' ,
+            element:<Capex></Capex>
+        }, 
+        {
+            path:'/resco' ,
+            element:<Resco></Resco>
+        },
     ]
     },
     {
         path:'/dashboard',
-        element:<PrivateRoute><DashboardLayout></DashboardLayout>
-        </PrivateRoute>,
+        element:<DashboardLayout></DashboardLayout>
+        ,
         children:[
             {
                 path:'/dashboard',
@@ -101,7 +113,7 @@ export const router =createBrowserRouter([
             },
             {
                 path:'/dashboard/aboutVideo',
-                element:<AboutVideoInput></AboutVideoInput>
+                element:<AboutVideoInput></AboutVideoInput> 
             },
             {
                 path:'/dashboard/cutomerLogo',
@@ -109,7 +121,11 @@ export const router =createBrowserRouter([
             },
             {
                 path:'/dashboard/consulting',
-                element:<ConsultingForm></ConsultingForm>
+                element:<ConsultingForm></ConsultingForm> 
+            },
+            {
+                path:'/dashboard/users',
+                element:<Users></Users>
             },
         ]
     }

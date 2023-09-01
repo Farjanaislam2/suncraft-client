@@ -16,11 +16,11 @@ const Home = () => {
       .then(data => setImg(data))
   }, [])
 
-  console.log(img[0]?.image?.url)
+  // console.log(img[0]?.image?.url)
   return (
     // Banner
-    <div className='container  my-5 relative'>
-      <div style={{ position: 'relative' }}>
+    <div className='container  relative bg-blue-200'>
+      <div style={{ position: 'relative' }} className='bg-blue-200 px-[100px]'>
        <Link to ='journey'> <button style={{ position: 'absolute', top: '46%', left: '44%' }} className="btn btn-primary rounded-3xl normal-case">Start your Journey</button></Link>
         <div className=' grid grid-cols-1 md:grid-cols-2 px-1 py-1' >
           <div>
@@ -80,10 +80,7 @@ const Home = () => {
         </div>
 
       </div>
-      <div>
-
-      </div>
-
+ 
       <Slider></Slider>
 
     </div>

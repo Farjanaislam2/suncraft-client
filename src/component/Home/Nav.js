@@ -69,33 +69,32 @@ const Nav = () => {
                     <Link className=' font-semibold' to='/About'>About Us</Link> 
                     </li>
                     <li>
-                       <Link className=' font-semibold' to='/Consulting'>Consulting</Link> 
+                       <Link className=' font-semibold' to='/Consulting'>Consultancy</Link> 
                     </li>
                     <li>
                         <Link to="../Project" className=' font-semibold'>Projects</Link>
                     </li>
-                    <li>
-                        <a className=' font-semibold'>Products</a>
-                    </li>
-            
+                  
+                   
                 </ul>
                 
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal  gap-8">
                   
-                    <li>
-                        <a className='  font-semibold'>Productive Load Applications</a>
-                    </li>
+                    {/* <li>
+                        <Link to='/buy project' className='font-semibold'>Buy Project From Us</Link>
+                    </li> */}
                     <li>
                         <a className=' font-semibold'>Investment Opportunities</a>
                     </li>
-                    
+                    <li>
+                        <a className=' font-semibold'>Our Investors</a>
+                    </li>
                     <li>
                         <Link to='/work with us' className=' font-semibold'>Work With Us</Link> 
                     </li>
-                  
-                 
+                
                     
                 </ul>
                 

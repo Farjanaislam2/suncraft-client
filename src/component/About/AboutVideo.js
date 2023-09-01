@@ -45,7 +45,7 @@ className=" my-5 h-[1000px] sm:h-64 md:h-56 lg:h-64 xl:h-72 rounded-md "
         src={item.url}
         frameborder="0"
         allow="autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
     ></iframe>
          
           {/* Render additional media data as needed */}
