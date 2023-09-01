@@ -23,7 +23,7 @@ import Privacy from "../component/About/Privacy";
 import Capex from "../component/Project/Capex";
 import Resco from "../component/Project/Resco";
 import Users from "../component/Pages/Dashboard/Users";
-import AdminRoute from "./AdminRoute/AdminRoute";
+
 
 
 
@@ -88,44 +88,44 @@ export const router =createBrowserRouter([
     },
     {
         path:'/dashboard',
-        element:<AdminRoute><DashboardLayout></DashboardLayout>
-        </AdminRoute>,
+        element:<DashboardLayout></DashboardLayout>
+        ,
         children:[
             {
                 path:'/dashboard',
-                element:<AdminRoute><HomeImage></HomeImage></AdminRoute>
+                element:<HomeImage></HomeImage>
             },
             {
                 path:'/dashboard/homeVideo',
-                element:<AdminRoute><HomeVideoPost></HomeVideoPost></AdminRoute>
+                element:<HomeVideoPost></HomeVideoPost>
             },
             {
                 path:'/dashboard/logoimg',
-                element:<AdminRoute><LogImage></LogImage></AdminRoute>
+                element:<LogImage></LogImage>
             },
             {
                 path:'/dashboard/tabledata',
-                element:<AdminRoute><TableForm></TableForm></AdminRoute>
+                element:<TableForm></TableForm>
             },
             {
                 path:'/dashboard/about',
-                element:<AdminRoute><AboutUs></AboutUs></AdminRoute>
+                element:<AboutUs></AboutUs>
             },
             {
                 path:'/dashboard/aboutVideo',
-                element:<AdminRoute><AboutVideoInput></AboutVideoInput> </AdminRoute>
+                element:<AboutVideoInput></AboutVideoInput> 
             },
             {
                 path:'/dashboard/cutomerLogo',
-                element:<AdminRoute><CustomerLogo></CustomerLogo></AdminRoute>
+                element:<CustomerLogo></CustomerLogo>
             },
             {
                 path:'/dashboard/consulting',
-                element:<AdminRoute><ConsultingForm></ConsultingForm> </AdminRoute>
+                element:<ConsultingForm></ConsultingForm> 
             },
             {
                 path:'/dashboard/users',
-                element:<AdminRoute><Users></Users></AdminRoute>
+                element:<Users></Users>
             },
         ]
     }
